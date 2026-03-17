@@ -8,7 +8,7 @@ const ReviewsSection = () => {
       name: 'Maria Huber',
       location: 'Berlin',
       rating: 5,
-      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann BAYERWALD Energie nur weiterempfehlen!',
+      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann Heidel Energie nur weiterempfehlen!',
       date: '2024-01-15'
     },
     {
