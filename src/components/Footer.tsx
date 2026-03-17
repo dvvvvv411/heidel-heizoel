@@ -12,7 +12,7 @@ const Footer = () => {
             <img 
               src="/heidel-logo.png" 
               alt="Heidel Energie" 
-              className="h-24 brightness-0 invert"
+              className="h-16 brightness-0 invert"
             />
             <p className="text-gray-300 leading-relaxed">
               Ihr zuverlässiger Partner für Heizöl in Deutschland mit 20 Jahren Erfahrung. 

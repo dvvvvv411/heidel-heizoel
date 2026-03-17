@@ -33,18 +33,18 @@ export default {
 					success: '#28a745',
 				},
 				// New accent orange color palette
-				'accent-orange': {
-					DEFAULT: '#e03c20',
-					50: '#fef2f2',
-					100: '#fee2e2',
-					200: '#fecaca',
-					300: '#fca5a5',
-					400: '#f87171',
-					500: '#e03c20',
-					600: '#dc2626',
-					700: '#b91c1c',
-					800: '#991b1b',
-					900: '#7f1d1d'
+			'accent-orange': {
+					DEFAULT: '#5bb8f5',
+					50: '#eff8ff',
+					100: '#dbeffe',
+					200: '#bfe3fe',
+					300: '#93d2fc',
+					400: '#5bb8f5',
+					500: '#3aa5f0',
+					600: '#2b90d4',
+					700: '#1f78b8',
+					800: '#185f94',
+					900: '#124a75'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
