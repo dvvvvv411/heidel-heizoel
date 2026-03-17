@@ -50,11 +50,6 @@ const Header = () => {
               />
             </Link>
 
-            {/* Handelsblatt Banner - Desktop */}
-            <div className="flex-1 max-w-xl">
-              <HandelsblattBanner />
-            </div>
-
             <nav className="flex items-center space-x-8 flex-shrink-0">
               <Link to="/" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Startseite
