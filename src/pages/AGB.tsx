@@ -14,7 +14,7 @@ const AGB = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Allgemeine Geschäftsbedingungen</h1>
             <p className="text-xl text-gray-600">
-              Gültig ab 01.01.2024 für BAYERWALD Energie GmbH
+              Gültig ab 01.01.2024 für Heidel Energie GmbH
             </p>
           </div>
 
