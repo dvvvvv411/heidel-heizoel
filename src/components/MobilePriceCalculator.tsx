@@ -59,16 +59,6 @@ const MobilePriceCalculator = () => {
     setOilType(productId);
   };
 
-  const scrollToProduct = (direction: 'left' | 'right') => {
-    if (scrollRef.current) {
-      const scrollAmount = 200;
-      const newScrollLeft = scrollRef.current.scrollLeft + (direction === 'right' ? scrollAmount : -scrollAmount);
-      scrollRef.current.scrollTo({
-        left: newScrollLeft,
-        behavior: 'smooth'
-      });
-    }
-  };
 
   const handleOrder = async () => {
     if (!canCalculate) {
