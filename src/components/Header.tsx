@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
 import { scrollToCalculator, scrollToCalculatorFromOtherPage } from '../utils/scrollToCalculator';
-import HandelsblattBanner from './HandelsblattBanner';
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,11 +49,6 @@ const Header = () => {
                 className="h-24"
               />
             </Link>
-
-            {/* Handelsblatt Banner - Desktop */}
-            <div className="flex-1 max-w-xl">
-              <HandelsblattBanner />
-            </div>
 
             <nav className="flex items-center space-x-8 flex-shrink-0">
               <Link to="/" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
@@ -102,11 +97,6 @@ const Header = () => {
                 {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
               </button>
             </div>
-          </div>
-
-          {/* Handelsblatt Banner - Mobile */}
-          <div className="px-4 pb-4">
-            <HandelsblattBanner />
           </div>
 
           {/* Mobile Navigation Menu */}
