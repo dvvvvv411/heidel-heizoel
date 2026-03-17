@@ -48,7 +48,7 @@ const Header = () => {
           <div className="flex justify-between items-center py-4 gap-6">
             <Link to="/" className="flex items-center flex-shrink-0">
               <img 
-                src="/bayerwald-logo.png" 
+                src="/heidel-logo.png" 
                 alt="Heidel Energie" 
                 className="h-24"
               />
@@ -86,7 +86,7 @@ const Header = () => {
             
             <Link to="/" className="flex items-center">
               <img 
-                src="/bayerwald-logo.png" 
+                src="/heidel-logo.png" 
                 alt="Heidel Energie" 
                 className="h-20"
               />

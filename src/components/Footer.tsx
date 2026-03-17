@@ -10,13 +10,9 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/bayerwald-logo.png" 
+              src="/heidel-logo.png" 
               alt="Heidel Energie" 
-              className="h-24"
-              style={{ 
-                filter: 'brightness(0) saturate(100%) invert(100%)',
-                WebkitFilter: 'brightness(0) saturate(100%) invert(100%)'
-              }}
+              className="h-24 brightness-0 invert"
             />
             <p className="text-gray-300 leading-relaxed">
               Ihr zuverlässiger Partner für Heizöl in Deutschland mit 20 Jahren Erfahrung. 
