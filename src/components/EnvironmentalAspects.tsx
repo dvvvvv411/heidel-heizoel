@@ -6,27 +6,27 @@ const EnvironmentalAspects = () => {
   const environmentalFeatures = [
     {
       icon: Leaf,
-      title: 'Schwefelarm',
-      description: 'Unter 50 mg/kg Schwefelgehalt für saubere Verbrennung',
-      impact: 'Reduzierte SO₂-Emissionen'
+      title: 'Niedriger Schwefelgehalt',
+      description: 'Weniger als 50 mg/kg Schwefel für eine besonders saubere Verbrennung',
+      impact: 'Deutlich weniger SO₂-Ausstoß'
     },
     {
       icon: Droplets,
-      title: 'Optimierte Verbrennung',
-      description: 'Gleichmäßige Verbrennung durch hochwertige Raffination',
-      impact: 'Weniger Ruß und Partikel'
+      title: 'Effiziente Verbrennung',
+      description: 'Gleichmäßiges Brennverhalten dank hochwertiger Raffination',
+      impact: 'Minimaler Ruß- und Partikelausstoß'
     },
     {
       icon: Recycle,
-      title: 'Nachhaltige Produktion',
-      description: 'Umweltschonende Herstellungsverfahren',
-      impact: 'Geringer CO₂-Fußabdruck'
+      title: 'Umweltbewusste Herstellung',
+      description: 'Ressourcenschonende Produktionsverfahren bei der Aufbereitung',
+      impact: 'Reduzierter CO₂-Fußabdruck'
     },
     {
       icon: Shield,
-      title: 'Gewässerschutz',
-      description: 'Biologisch abbaubare Additive in Premium-Qualität',
-      impact: 'Umweltverträglich'
+      title: 'Schutz der Gewässer',
+      description: 'Biologisch abbaubare Zusätze in unserer Premium-Variante',
+      impact: 'Umweltschonend'
     }
   ];
 
@@ -35,11 +35,11 @@ const EnvironmentalAspects = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Umwelt & Nachhaltigkeit
+            Verantwortung für Umwelt & Klima
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Unser Beitrag zum Umweltschutz durch hochwertige, schwefelarme Heizöl-Qualitäten 
-            und nachhaltige Produktionsverfahren.
+            Durch schwefelarme Heizölsorten und nachhaltige Produktionsprozesse 
+            leisten wir unseren Beitrag zum Umweltschutz.
           </p>
         </div>
 
@@ -70,22 +70,22 @@ const EnvironmentalAspects = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Leaf className="w-6 h-6 text-green-600" />
-                Emissionswerte
+                Schadstoffwerte im Überblick
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                  <span className="font-medium">CO₂-Emissionen</span>
-                  <span className="text-green-600 font-semibold">-15% vs. Standard</span>
+                  <span className="font-medium">CO₂-Ausstoß</span>
+                  <span className="text-green-600 font-semibold">-15% gegenüber Standard</span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                  <span className="font-medium">Schwefel-Emissionen</span>
+                  <span className="font-medium">Schwefel im Abgas</span>
                   <span className="text-green-600 font-semibold">{"< 50 mg/kg"}</span>
                 </div>
                 <div className="flex justify-between items-center p-3 bg-gray-50 rounded">
-                  <span className="font-medium">Partikel-Emissionen</span>
-                  <span className="text-green-600 font-semibold">Minimal</span>
+                  <span className="font-medium">Feinstaubbelastung</span>
+                  <span className="text-green-600 font-semibold">Äußerst gering</span>
                 </div>
               </div>
             </CardContent>
@@ -95,26 +95,26 @@ const EnvironmentalAspects = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Recycle className="w-6 h-6 text-green-600" />
-                Nachhaltigkeitsmaßnahmen
+                Unsere Nachhaltigkeitsinitiativen
               </CardTitle>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
-                  <span>Optimierte Transportrouten zur CO₂-Reduktion</span>
+                  <span>Routenoptimierte Transporte zur Senkung der CO₂-Bilanz</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
-                  <span>Verwendung erneuerbarer Energien in der Produktion</span>
+                  <span>Einsatz regenerativer Energien in der Produktion</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
-                  <span>Recycling und Wiederverwertung von Verpackungen</span>
+                  <span>Konsequentes Recycling von Verpackungsmaterialien</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 bg-green-600 rounded-full mt-2"></div>
-                  <span>Kontinuierliche Verbesserung der Umweltbilanz</span>
+                  <span>Fortlaufende Optimierung unserer Umweltbilanz</span>
                 </li>
               </ul>
             </CardContent>

@@ -8,35 +8,35 @@ const QualityAssuranceSection = () => {
   const qualityFeatures = [
     {
       icon: Truck,
-      title: 'TÜV-geprüfte Tankwagen',
-      description: 'Alle unsere Fahrzeuge werden regelmäßig vom TÜV geprüft',
+      title: 'TÜV-zertifizierte Fahrzeuge',
+      description: 'Sämtliche Tankwagen werden regelmäßig vom TÜV überprüft',
       details: [
         'Jährliche TÜV-Hauptuntersuchung',
-        'Monatliche Sicherheitschecks',
-        'Zertifizierte Tankwagen-Ausrüstung',
-        'Umweltschutz-Zertifizierung'
+        'Monatliche Sicherheitsüberprüfungen',
+        'Zertifizierte Tankwagen-Technik',
+        'Umweltschutz-Zulassung'
       ]
     },
     {
       icon: Shield,
-      title: 'Qualitätskontrolle',
-      description: 'Lückenlose Qualitätskontrolle vom Einkauf bis zur Lieferung',
+      title: 'Lückenlose Qualitätsprüfung',
+      description: 'Durchgehende Kontrolle vom Einkauf bis zur Auslieferung',
       details: [
-        'Laboranalyse jeder Heizölcharge',
-        'DIN EN 590 Konformitätsprüfung',
-        'Kontinuierliche Qualitätsüberwachung',
-        'Rückverfolgbarkeit aller Lieferungen'
+        'Laboranalyse jeder einzelnen Charge',
+        'DIN EN 590 Konformitätsnachweis',
+        'Permanente Qualitätsüberwachung',
+        'Vollständige Rückverfolgbarkeit aller Lieferungen'
       ]
     },
     {
       icon: Bell,
-      title: 'Lieferprotokoll',
-      description: 'Detaillierte Dokumentation jeder Lieferung',
+      title: 'Digitales Zustellprotokoll',
+      description: 'Lückenlose Dokumentation jeder einzelnen Lieferung',
       details: [
-        'Digitales Lieferprotokoll vor Ort',
-        'Mengenangabe und Qualitätsnachweis',
-        'Unterschrift per Tablet',
-        'Sofortiger E-Mail-Versand'
+        'Elektronisches Lieferprotokoll vor Ort',
+        'Mengennachweis und Qualitätsbeleg',
+        'Digitale Unterschrift per Tablet',
+        'Sofortiger Versand per E-Mail'
       ]
     }
   ];
@@ -46,11 +46,11 @@ const QualityAssuranceSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Qualitätssicherung
+            Geprüfte Qualität bei jeder Lieferung
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Höchste Qualitäts- und Sicherheitsstandards bei jeder Lieferung. 
-            Vertrauen Sie auf unsere geprüften Prozesse und zertifizierten Services.
+            Strenge Qualitäts- und Sicherheitsstandards garantieren Ihnen bei jeder Zustellung 
+            ein Höchstmaß an Zuverlässigkeit.
           </p>
         </div>
 
@@ -95,7 +95,7 @@ const QualityAssuranceSection = () => {
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-green-700">
-                Zertifiziertes Qualitätsmanagementsystem für höchste Standards
+                Zertifiziertes Qualitätsmanagement für durchgängig hohe Standards
               </p>
             </CardContent>
           </Card>
@@ -105,11 +105,11 @@ const QualityAssuranceSection = () => {
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Truck className="w-8 h-8 text-white" />
               </div>
-              <CardTitle className="text-blue-800">TÜV-Zertifiziert</CardTitle>
+              <CardTitle className="text-blue-800">TÜV-Zertifizierung</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-blue-700">
-                Alle Fahrzeuge und Anlagen sind TÜV-geprüft und zertifiziert
+                Alle Fahrzeuge und Anlagen sind TÜV-geprüft und zugelassen
               </p>
             </CardContent>
           </Card>
@@ -119,11 +119,11 @@ const QualityAssuranceSection = () => {
               <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-white" />
               </div>
-              <CardTitle className="text-purple-800">24/7 Service</CardTitle>
+              <CardTitle className="text-purple-800">24/7 Bereitschaft</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
               <p className="text-purple-700">
-                Rund um die Uhr erreichbarer Kundenservice und Notfall-Hotline
+                Unser Support und die Notfall-Hotline sind jederzeit erreichbar
               </p>
             </CardContent>
           </Card>
@@ -131,15 +131,15 @@ const QualityAssuranceSection = () => {
 
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-primary-600 to-primary-700 text-white p-8 rounded-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Qualitätsgarantie</h3>
+            <h3 className="text-2xl font-bold mb-4">Unser Qualitätsversprechen</h3>
             <p className="text-primary-100 mb-6">
-              Wir garantieren Ihnen höchste Qualität bei jeder Lieferung. 
-              Bei Problemen sorgen wir umgehend für eine Lösung.
+              Wir stehen für höchste Produktqualität bei jeder Zustellung. 
+              Sollte einmal etwas nicht stimmen, finden wir umgehend eine Lösung.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/produkte">
                 <Button variant="outline" className="bg-white text-primary-600 hover:bg-gray-50">
-                  Qualitätszertifikate ansehen
+                  Zertifikate einsehen
                 </Button>
               </Link>
             </div>

@@ -8,51 +8,51 @@ const AdditionalServicesSection = () => {
   const additionalServices = [
     {
       icon: Map,
-      title: 'Tankinhaltsmessung',
-      description: 'Professionelle Messung Ihres aktuellen Heizölbestands',
+      title: 'Füllstandsermittlung',
+      description: 'Fachgerechte Bestimmung Ihres aktuellen Heizölvorrats',
       features: [
-        'Genaue Füllstandsmessung vor Ort',
-        'Berechnung der benötigten Heizölmenge',
-        'Kostenlose Beratung zur optimalen Bestellmenge',
-        'Dokumentation für Ihre Unterlagen'
+        'Exakte Füllstandsmessung direkt bei Ihnen',
+        'Berechnung der benötigten Nachfüllmenge',
+        'Kostenfreie Empfehlung zur idealen Bestellmenge',
+        'Schriftliche Dokumentation für Ihre Ablage'
       ],
-      price: 'Kostenlos bei Bestellung'
+      price: 'Gratis bei Bestellung'
     },
     {
       icon: Clock,
-      title: 'Notfalllieferung',
-      description: '24/7 Service für dringende Heizöllieferungen',
+      title: 'Eilzustellung',
+      description: 'Rund-um-die-Uhr-Bereitschaft für dringende Lieferungen',
       features: [
-        'Express-Lieferung innerhalb von 4 Stunden',
-        'Auch an Wochenenden und Feiertagen',
-        'Mindestmenge bereits ab 300 Liter',
-        'Telefonische Hotline rund um die Uhr'
+        'Express-Zustellung innerhalb von 4 Stunden',
+        'Auch an Wochenenden und Feiertagen verfügbar',
+        'Bereits ab 300 Liter Mindestmenge',
+        'Telefonisch erreichbare Notfall-Hotline'
       ],
-      price: 'Aufpreis 15€/100L'
+      price: 'Zuschlag 15€/100L'
     },
     {
       icon: Bell,
-      title: 'Preisalarm-Service',
-      description: 'Automatische Benachrichtigung bei günstigen Preisen',
+      title: 'Preisbenachrichtigung',
+      description: 'Automatischer Hinweis bei besonders günstigen Konditionen',
       features: [
-        'Individuelle Preisschwelle festlegen',
-        'SMS oder E-Mail Benachrichtigung',
-        'Marktanalyse und Preistrends',
-        'Optimaler Kaufzeitpunkt-Empfehlung'
+        'Persönliche Wunschpreisschwelle definieren',
+        'Benachrichtigung per SMS oder E-Mail',
+        'Marktbeobachtung und Trendanalysen',
+        'Empfehlung für den optimalen Bestellzeitpunkt'
       ],
-      price: 'Kostenloser Service'
+      price: 'Kostenfreier Service'
     },
     {
       icon: Truck,
-      title: 'Sammelbestellungen',
-      description: 'Gemeinsame Bestellungen für bessere Preise',
+      title: 'Gemeinschaftsbestellungen',
+      description: 'Gemeinsam bestellen und von besseren Konditionen profitieren',
       features: [
-        'Organisation von Nachbarschaftsbestellungen',
-        'Bis zu 10% Rabatt bei Sammelbestellungen',
-        'Koordination der Liefertermine',
-        'Abrechnung nach individuellen Mengen'
+        'Koordination von Nachbarschaftsbestellungen',
+        'Bis zu 10% Preisnachlass bei Sammelbestellungen',
+        'Abstimmung der Liefertermine',
+        'Individuelle Abrechnung nach Menge'
       ],
-      price: 'Rabatt bis 10%'
+      price: 'Bis zu 10% Vorteil'
     }
   ];
 
@@ -61,11 +61,11 @@ const AdditionalServicesSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Zusätzliche Services
+            Weitere Leistungen für Sie
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Mehr als nur Heizöllieferung - wir bieten Ihnen umfassende Serviceleistungen 
-            für Ihre optimale Heizölversorgung.
+            Weit mehr als reine Heizöllieferung – entdecken Sie unser umfangreiches 
+            Serviceangebot für Ihre Heizölversorgung.
           </p>
         </div>
 

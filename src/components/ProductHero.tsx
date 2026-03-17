@@ -7,11 +7,11 @@ const ProductHero = () => {
     <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-20">
       <div className="container mx-auto px-4 text-center">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-          Unsere Heizöl-Produkte
+          Unser Heizöl-Sortiment
         </h1>
         <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-          Hochwertige Heizöl-Qualitäten für jeden Bedarf - von bewährter Standard-Qualität 
-          bis hin zu Premium-Heizöl mit modernsten Additiven.
+          Erstklassige Heizöl-Varianten für jeden Anspruch – von der bewährten Standardqualität 
+          bis zum Premium-Heizöl mit innovativen Schutzadditiven.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 

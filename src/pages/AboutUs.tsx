@@ -56,19 +56,19 @@ const AboutUs = () => {
   const certifications = [
     {
       name: "ISO 9001",
-      description: "Qualitätsmanagement-System"
+      description: "Zertifiziertes Qualitätsmanagement"
     },
     {
       name: "DIN SPEC 51603-1",
-      description: "Premium-Heizöl Standard"
+      description: "Premium-Heizöl Qualitätsstandard"
     },
     {
       name: "WHG Zertifikat",
-      description: "Wasserhaushaltsgesetz konform"
+      description: "Konform mit dem Wasserhaushaltsgesetz"
     },
     {
       name: "ADR Zertifikat",
-      description: "Gefahrgut-Transport Lizenz"
+      description: "Lizenz für den Gefahrguttransport"
     }
   ];
 
@@ -80,11 +80,11 @@ const AboutUs = () => {
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Über Heidel Energie GmbH
+            Das ist Heidel Energie GmbH
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
-            Mit 20 Jahren Erfahrung Ihr zuverlässiger Partner für Premium-Heizöl in Deutschland. 
-            Qualität, Service und faire Preise sind unser Versprechen an Sie.
+            Seit über 20 Jahren Ihr verlässlicher Partner für hochwertiges Heizöl in Deutschland. 
+            Erstklassige Qualität, persönlicher Service und transparente Preise – darauf geben wir Ihnen unser Wort.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-50">
@@ -107,25 +107,25 @@ const AboutUs = () => {
               <div className="text-4xl font-bold text-primary-600 mb-2">
                 {animatedStats.years}+
               </div>
-              <div className="text-gray-600">Jahre Erfahrung</div>
+              <div className="text-gray-600">Jahre Branchenerfahrung</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">
                 {animatedStats.customers.toLocaleString()}+
               </div>
-              <div className="text-gray-600">Zufriedene Kunden</div>
+              <div className="text-gray-600">Begeisterte Kunden</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">
                 {animatedStats.rating}★
               </div>
-              <div className="text-gray-600">Kundenbewertung</div>
+              <div className="text-gray-600">Durchschnittsbewertung</div>
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-primary-600 mb-2">
                 {animatedStats.deliveries.toLocaleString()}+
               </div>
-              <div className="text-gray-600">Lieferungen</div>
+              <div className="text-gray-600">Erfolgreiche Zustellungen</div>
             </div>
           </div>
         </div>
@@ -137,26 +137,25 @@ const AboutUs = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Unsere Geschichte
+                Wie alles begann
               </h2>
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                 <p>
-                  Im Jahr 2016 wurde Heidel Energie GmbH mit dem Ziel gegründet, 
-                  Kunden in Deutschland mit hochwertigem Heizöl zu fairen Preisen zu versorgen. 
-                  Mit 20 Jahren Branchenerfahrung haben wir uns zu einem der 
-                  führenden Heizöl-Anbieter in der Region entwickelt.
+                  2016 wurde Heidel Energie GmbH mit einer klaren Mission gegründet: 
+                  Kunden in Deutschland zuverlässig mit hochwertigem Heizöl zu attraktiven 
+                  Konditionen zu versorgen. Mit über 20 Jahren gesammelter Branchenkenntnis 
+                  haben wir uns rasch zu einem der gefragtesten Anbieter der Region entwickelt.
                 </p>
                 <p>
-                  Unser Erfolg basiert auf drei Säulen: erstklassige Produktqualität, 
-                  zuverlässiger Service und transparente Preisgestaltung. Wir beliefern 
-                  sowohl Privatkunden als auch Gewerbekunden und setzen dabei auf 
-                  modernste Logistik und persönliche Betreuung.
+                  Drei Grundpfeiler tragen unseren Erfolg: exzellente Produktqualität, 
+                  verlässlicher Service und eine offene Preisgestaltung. Wir betreuen 
+                  Privat- wie Geschäftskunden und setzen dabei auf modernste Logistik 
+                  und individuelle Betreuung.
                 </p>
                 <p>
-                  Mit über 100.000 zufriedenen Kunden und mehr als 200.000 erfolgreichen 
-                  Lieferungen haben wir uns das Vertrauen der Menschen in Deutschland verdient. 
-                  Unser Team aus erfahrenen Fachkräften steht Ihnen jederzeit mit Rat 
-                  und Tat zur Seite.
+                  Mehr als 100.000 zufriedene Kunden und über 200.000 reibungslose 
+                  Zustellungen sprechen für sich. Unser eingespieltes Team aus Fachleuten 
+                  steht Ihnen jederzeit mit Kompetenz und Engagement zur Seite.
                 </p>
               </div>
             </div>
@@ -166,8 +165,8 @@ const AboutUs = () => {
                 <h3 className="text-3xl font-bold mb-4">Heidel</h3>
                 <p className="text-xl text-primary-100 mb-6">Energie GmbH</p>
                 <div className="space-y-2 text-primary-100">
-                  <p>Seit 2016 in Düsseldorf</p>
-                  <p>Deutschlands Heizöl-Experte</p>
+                  <p>Gegründet 2016 in Düsseldorf</p>
+                  <p>Ihr Heizöl-Spezialist für Deutschland</p>
                 </div>
               </div>
             </div>
@@ -180,11 +179,11 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Warum Heizöl von Heidel Energie wählen?
+              Gute Gründe für Heidel Energie
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Wir bieten Ihnen mehr als nur Heizöl - wir bieten Ihnen Sicherheit, 
-              Qualität und einen Service, auf den Sie sich verlassen können.
+              Bei uns erhalten Sie mehr als nur Heizöl – wir bieten Ihnen Sicherheit, 
+              geprüfte Qualität und einen Service, der keine Wünsche offen lässt.
             </p>
           </div>
 
@@ -194,10 +193,10 @@ const AboutUs = () => {
                 <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Award className="text-blue-600" size={40} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Premium Qualität</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Erstklassige Qualität</h3>
                 <p className="text-gray-600">
-                  Unser Heizöl entspricht höchsten Qualitätsstandards nach DIN SPEC 51603-1 
-                  für optimale Brennleistung und Effizienz.
+                  Unser Heizöl erfüllt die strengsten Qualitätsvorgaben nach DIN SPEC 51603-1 
+                  für eine optimale Brennleistung und Effizienz.
                 </p>
               </CardContent>
             </Card>
@@ -207,10 +206,10 @@ const AboutUs = () => {
                 <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Shield className="text-green-600" size={40} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Zuverlässigkeit</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Absolute Verlässlichkeit</h3>
                 <p className="text-gray-600">
-                  Pünktliche Lieferung, transparente Preise und 24/7 Notfallservice - 
-                  darauf können Sie sich verlassen.
+                  Termintreue Zustellung, transparente Konditionen und 24/7 Notfallbereitschaft – 
+                  auf uns können Sie bauen.
                 </p>
               </CardContent>
             </Card>
@@ -220,10 +219,10 @@ const AboutUs = () => {
                 <div className="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="text-orange-600" size={40} />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Persönlicher Service</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Individuelle Betreuung</h3>
                 <p className="text-gray-600">
-                  Individuelle Beratung, flexible Liefertermine und ein Team, 
-                  das sich um Ihre Bedürfnisse kümmert.
+                  Persönliche Beratung, flexible Liefertermine und ein Team, 
+                  das sich um Ihre Anliegen kümmert.
                 </p>
               </CardContent>
             </Card>
@@ -236,10 +235,10 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Unser Liefergebiet
+              Unser Versorgungsgebiet
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Wir liefern zuverlässig in ganz Deutschland – von Berlin bis München, 
+              Wir liefern verlässlich in ganz Deutschland – von Berlin bis München, 
               von Hamburg bis Stuttgart, vom Ruhrgebiet bis nach Sachsen.
             </p>
           </div>
@@ -249,7 +248,7 @@ const AboutUs = () => {
               <div>
                 <div className="flex items-center mb-6">
                   <MapPin className="text-primary-600 mr-3" size={32} />
-                  <h3 className="text-2xl font-bold text-gray-900">Ganz Deutschland</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Bundesweite Abdeckung</h3>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center">
@@ -258,15 +257,15 @@ const AboutUs = () => {
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3" size={20} />
-                    <span>Hamburg und Norddeutschland</span>
+                    <span>Hamburg und der Norden</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3" size={20} />
-                    <span>Köln/Düsseldorf und Ruhrgebiet</span>
+                    <span>Köln/Düsseldorf und das Ruhrgebiet</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3" size={20} />
-                    <span>Frankfurt am Main und Rhein-Main-Gebiet</span>
+                    <span>Frankfurt und das Rhein-Main-Gebiet</span>
                   </div>
                   <div className="flex items-center">
                     <CheckCircle className="text-green-500 mr-3" size={20} />
@@ -276,8 +275,8 @@ const AboutUs = () => {
               </div>
               <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-xl p-8 text-center">
                 <div className="text-6xl mb-4">🗺️</div>
-                <h4 className="text-xl font-bold text-gray-900 mb-2">Kostenlose Lieferung</h4>
-                <p className="text-gray-700 mb-4">ab 1500 Liter in ganz Deutschland</p>
+                <h4 className="text-xl font-bold text-gray-900 mb-2">Kostenfreie Zustellung</h4>
+                <p className="text-gray-700 mb-4">ab 1500 Liter deutschlandweit</p>
                 <div className="text-2xl font-bold text-primary-600">4-7</div>
                 <div className="text-sm text-gray-600">Werktage</div>
               </div>
@@ -294,7 +293,7 @@ const AboutUs = () => {
               Zertifizierungen & Qualitätsstandards
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Unsere Zertifizierungen garantieren Ihnen höchste Qualität und Sicherheit
+              Unsere Zertifizierungen stehen für höchste Qualität und maximale Sicherheit
             </p>
           </div>
 
@@ -325,13 +324,13 @@ const AboutUs = () => {
                     Heidel Energie GmbH
                   </h2>
                   <p className="text-xl text-gray-600">
-                    Ihr Partner für Heizöl in Deutschland
+                    Ihr Heizöl-Partner für ganz Deutschland
                   </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Anschrift</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Firmenadresse</h3>
                     <div className="space-y-2 text-gray-700">
                       <p>Heidel Energie GmbH</p>
                       <p>Kaiserstr. 5</p>
@@ -341,7 +340,7 @@ const AboutUs = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Kontakt</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Kontaktdaten</h3>
                     <div className="space-y-3">
                       <div className="flex items-center">
                         <Phone className="text-primary-600 mr-3" size={20} />
@@ -355,7 +354,7 @@ const AboutUs = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Handelsregister</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Registerdaten</h3>
                     <div className="space-y-2 text-gray-700">
                       <p>HRB 104494</p>
                       <p>Amtsgericht Düsseldorf</p>
@@ -364,11 +363,11 @@ const AboutUs = () => {
                   </div>
 
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Öffnungszeiten</h3>
+                    <h3 className="text-xl font-bold text-gray-900 mb-4">Servicezeiten</h3>
                     <div className="space-y-2 text-gray-700">
                       <p>Mo-Fr: 8:00 - 18:00 Uhr</p>
                       <p>Sa: 9:00 - 14:00 Uhr</p>
-                      <p>Notfallservice: 24/7</p>
+                      <p>Notfall-Bereitschaft: 24/7</p>
                     </div>
                   </div>
                 </div>

@@ -6,25 +6,25 @@ const QualityCertificates = () => {
   const certificates = [
     {
       title: 'DIN EN 590',
-      description: 'Europäische Norm für Dieselkraftstoff und Heizöl',
+      description: 'Europäischer Standard für Heizöl und Dieselkraftstoff',
       icon: Shield,
       status: 'Zertifiziert'
     },
     {
       title: 'ISO 9001:2015',
-      description: 'Qualitätsmanagementsystem',
+      description: 'Anerkanntes Qualitätsmanagementsystem',
       icon: Award,
       status: 'Zertifiziert'
     },
     {
       title: 'ISO 14001',
-      description: 'Umweltmanagementsystem',
+      description: 'Zertifiziertes Umweltmanagement',
       icon: Leaf,
       status: 'Zertifiziert'
     },
     {
       title: 'RAL Gütezeichen',
-      description: 'Gütegemeinschaft Energiehandel',
+      description: 'Gütesiegel der Energiehandelsgemeinschaft',
       icon: CheckCircle,
       status: 'Zertifiziert'
     }
@@ -35,11 +35,11 @@ const QualityCertificates = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Qualitätszertifikate
+            Unsere Qualitätsnachweise
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Unsere Produkte erfüllen höchste Qualitätsstandards und sind nach 
-            anerkannten nationalen und internationalen Normen zertifiziert.
+            Alle unsere Produkte entsprechen strengsten Qualitätsvorgaben und sind nach 
+            nationalen sowie internationalen Normen zertifiziert.
           </p>
         </div>
 

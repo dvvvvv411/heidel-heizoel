@@ -8,17 +8,17 @@ const ServiceContact = () => {
   const contactOptions = [
     {
       icon: Bell,
-      title: 'Online-Service',
+      title: 'Digitaler Service',
       info: 'info@heidel-heizoel.de',
       description: 'E-Mail-Anfragen und Online-Bestellung',
-      availability: 'Antwort innerhalb 2 Stunden'
+      availability: 'Rückmeldung innerhalb von 2 Stunden'
     },
     {
       icon: Map,
-      title: 'Vor-Ort-Beratung',
-      info: 'Kostenloser Hausbesuch',
-      description: 'Persönliche Beratung bei Ihnen zu Hause',
-      availability: 'Nach Terminvereinbarung'
+      title: 'Persönliche Beratung',
+      info: 'Kostenfreier Hausbesuch',
+      description: 'Individuelle Beratung bei Ihnen vor Ort',
+      availability: 'Nach Terminabsprache'
     }
   ];
 
@@ -27,11 +27,11 @@ const ServiceContact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Service & Kontakt
+            Beratung & Kontakt
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Wir sind für Sie da! Kontaktieren Sie uns für Beratung, Bestellung oder bei Fragen 
-            rund um unsere Services.
+            Wir helfen Ihnen gerne weiter! Nehmen Sie Kontakt auf – ob für Beratung, 
+            Bestellung oder Fragen zu unserem Angebot.
           </p>
         </div>
 

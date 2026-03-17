@@ -6,32 +6,32 @@ const BenefitsSection = () => {
   const benefits = [
     {
       icon: Truck,
-      title: 'Kostenlose Lieferung',
-      description: 'Kostenlose Lieferung in Deutschland ab 1500 Liter Bestellmenge',
+      title: 'Versandkostenfreie Zustellung',
+      description: 'Ab einer Bestellmenge von 1500 Litern liefern wir in ganz Deutschland ohne Zusatzkosten',
       color: 'bg-blue-50 text-blue-600'
     },
     {
       icon: Shield,
-      title: 'Premium Qualität',
-      description: 'Geprüftes Heizöl nach DIN-Norm für optimale Heizleistung',
+      title: 'Erstklassige Produktqualität',
+      description: 'DIN-geprüftes Heizöl für eine effiziente und saubere Verbrennung',
       color: 'bg-green-50 text-green-600'
     },
     {
       icon: Clock,
-      title: 'Schnelle Lieferung',
-      description: 'Lieferung innerhalb von 4-7 Werktagen direkt zu Ihnen',
+      title: 'Zügige Belieferung',
+      description: 'Ihre Bestellung erreicht Sie innerhalb von 4-7 Werktagen',
       color: 'bg-orange-50 text-orange-600'
     },
     {
       icon: Award,
-      title: '20 Jahre Erfahrung',
-      description: 'Zuverlässiger Partner für Heizöl in Deutschland seit 2016',
+      title: 'Zwei Jahrzehnte Kompetenz',
+      description: 'Seit 2016 sind wir Ihr bewährter Heizöl-Partner in Deutschland',
       color: 'bg-red-50 text-red-600'
     },
     {
       icon: Users,
-      title: '100.000+ Kunden',
-      description: 'Tausende zufriedene Kunden vertrauen auf unsere Qualität',
+      title: 'Über 100.000 Kunden',
+      description: 'Eine stetig wachsende Gemeinschaft vertraut auf unseren Service',
       color: 'bg-indigo-50 text-indigo-600'
     }
   ];
@@ -41,11 +41,11 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Warum Heidel Energie?
+            Ihre Vorteile mit Heidel Energie
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Als führender Heizöl-Anbieter in Deutschland stehen wir für Qualität, Zuverlässigkeit 
-            und erstklassigen Service. Überzeugen Sie sich von unseren Vorteilen.
+            Heidel Energie vereint hochwertige Produkte, pünktliche Lieferung und 
+            persönlichen Service – deutschlandweit. Entdecken Sie, was uns auszeichnet.
           </p>
         </div>
 
@@ -82,15 +82,15 @@ const BenefitsSection = () => {
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">4-7</div>
-              <div className="text-primary-100">Werktage Lieferzeit</div>
+              <div className="text-primary-100">Werktage bis zur Zustellung</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">24/7</div>
-              <div className="text-primary-100">Kundenservice</div>
+              <div className="text-primary-100">Erreichbarer Support</div>
             </div>
             <div>
               <div className="text-4xl font-bold mb-2">100%</div>
-              <div className="text-primary-100">Kundenzufriedenheit</div>
+              <div className="text-primary-100">Zufriedenheitsgarantie</div>
             </div>
           </div>
         </div>

@@ -25,29 +25,29 @@ const HeroSection = () => {
           <div className="space-y-6 lg:space-y-8 animate-fade-in">
             <div className="space-y-4">
               <div className="inline-flex items-center px-3 py-2 lg:px-4 bg-accent-orange-100 text-accent-orange-700 rounded-full text-sm font-medium">
-                🔥 Heizöl-Experte seit 20 Jahren
+                🔥 Über 20 Jahre Kompetenz im Heizölmarkt
               </div>
               
               <h1 className="text-3xl sm:text-4xl lg:text-6xl font-bold text-gray-900 leading-tight text-balance">
-                Heizöl günstig
+                Heizöl zum
                 <br />
-                <span className="text-primary-600">bestellen</span>
+                <span className="text-primary-600">besten Preis</span>
                 <br />
-                Deutschlandweit
+                in ganz Deutschland
               </h1>
               
               <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-                Kostenlose Lieferung in Deutschland • <span className="text-accent-orange-600 font-semibold">Ab 70 Cent pro Liter</span> • Schnell & zuverlässig
+                Gratis-Lieferung deutschlandweit • <span className="text-accent-orange-600 font-semibold">Schon ab 70 Cent/Liter</span> • Prompt & verlässlich
               </p>
             </div>
 
             {/* USPs */}
             <div className="space-y-3">
               {[
-                { text: 'Kostenlose Lieferung in Deutschland ab 1500 Liter', highlight: true },
-                { text: 'Lieferung innerhalb 4-7 Werktagen', highlight: false },
-                { text: 'Geprüfte Premium-Qualität', highlight: false },
-                { text: 'Über 100.000 zufriedene Kunden', highlight: true }
+                { text: 'Gratis-Lieferung in ganz Deutschland ab 1500 Liter', highlight: true },
+                { text: 'Zustellung in nur 4-7 Werktagen', highlight: false },
+                { text: 'Zertifizierte Premium-Qualität nach DIN-Norm', highlight: false },
+                { text: 'Mehr als 100.000 begeisterte Kunden', highlight: true }
               ].map((usp, index) => (
                 <div key={index} className="flex items-center space-x-3">
                   <CheckCircle className={`flex-shrink-0 ${usp.highlight ? 'text-accent-orange-500' : 'text-primary-600'}`} size={18} />
@@ -62,7 +62,7 @@ const HeroSection = () => {
                 onClick={scrollToCalculator}
                 className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-200 hover:scale-105"
               >
-                Preis berechnen
+                Jetzt Preis ermitteln
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </div>
@@ -73,26 +73,26 @@ const HeroSection = () => {
                 onClick={scrollToCalculator}
                 className="w-full bg-primary-600 hover:bg-primary-700 text-white py-4 text-lg font-semibold min-h-[48px]"
               >
-                Preis berechnen
+                Jetzt Preis ermitteln
                 <ArrowRight className="ml-2" size={20} />
               </Button>
             </div>
 
             {/* Trust Indicators */}
             <div className="pt-6 lg:pt-8 border-t border-gray-200">
-              <p className="text-sm text-gray-500 mb-4">Vertrauen Sie auf 20 Jahre Erfahrung</p>
+              <p className="text-sm text-gray-500 mb-4">Profitieren Sie von zwei Jahrzehnten Branchenkompetenz</p>
               <div className="grid grid-cols-3 gap-4 lg:flex lg:items-center lg:space-x-8">
                 <div className="text-center">
                   <div className="text-xl lg:text-2xl font-bold text-accent-orange-600">100.000+</div>
-                  <div className="text-xs lg:text-sm text-gray-500">Zufriedene Kunden</div>
+                  <div className="text-xs lg:text-sm text-gray-500">Begeisterte Kunden</div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl lg:text-2xl font-bold text-primary-600">20+</div>
-                  <div className="text-xs lg:text-sm text-gray-500">Jahre Erfahrung</div>
+                  <div className="text-xs lg:text-sm text-gray-500">Jahre Branchenkenntnis</div>
                 </div>
                 <div className="text-center">
                   <div className="text-xl lg:text-2xl font-bold text-accent-orange-600">24h</div>
-                  <div className="text-xs lg:text-sm text-gray-500">Service</div>
+                  <div className="text-xs lg:text-sm text-gray-500">Erreichbarkeit</div>
                 </div>
               </div>
             </div>

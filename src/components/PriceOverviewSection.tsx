@@ -12,7 +12,6 @@ import PriceCalculator from './PriceCalculator';
 const PriceOverviewSection = () => {
   const [activeTab, setActiveTab] = useState('prices');
 
-  // Preisentwicklung Mock-Daten
   const priceHistory = [
     { month: 'Jan', standard: 0.68, premium: 0.71 },
     { month: 'Feb', standard: 0.69, premium: 0.72 },
@@ -43,21 +42,21 @@ const PriceOverviewSection = () => {
   const paymentOptions = [
     {
       icon: CreditCard,
-      title: 'Vorkasse',
-      description: '2% Skonto bei Vorauszahlung',
-      details: 'Bei Zahlung vor Lieferung gewähren wir Ihnen 2% Skonto auf den Gesamtbetrag.'
+      title: 'Vorauszahlung',
+      description: '2% Preisnachlass bei Vorkasse',
+      details: 'Wenn Sie vor Lieferung bezahlen, gewähren wir Ihnen 2% Skonto auf die Gesamtsumme.'
     },
     {
       icon: FileText,
-      title: 'Rechnung',
-      description: 'Für Stammkunden verfügbar',
-      details: 'Zahlungsziel 14 Tage nach Rechnungsstellung. Für Neukunden nach Bonitätsprüfung.'
+      title: 'Kauf auf Rechnung',
+      description: 'Für bestehende Kunden verfügbar',
+      details: 'Zahlungsfrist 14 Tage nach Rechnungserhalt. Für Neukunden nach erfolgreicher Bonitätsprüfung.'
     },
     {
       icon: Clock,
-      title: 'Ratenzahlung',
-      description: 'Ab 1000€ Bestellwert',
-      details: '0% Zinsen bei 3-6 Monaten Laufzeit. Längere Laufzeiten auf Anfrage.'
+      title: 'Teilzahlung',
+      description: 'Ab 1000€ Bestellwert möglich',
+      details: '0% Zinsen bei 3-6 Monaten Laufzeit. Individuelle Konditionen auf Anfrage.'
     }
   ];
 
@@ -66,24 +65,23 @@ const PriceOverviewSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Transparente Preisübersicht
+            Klare Preisgestaltung ohne Überraschungen
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Faire Preise ohne versteckte Kosten. Vergleichen Sie selbst und überzeugen Sie sich 
-            von unserem unschlagbaren Preis-Leistungs-Verhältnis.
+            Attraktive Konditionen ohne versteckte Gebühren. Vergleichen Sie selbst und überzeugen 
+            Sie sich von unserem hervorragenden Preis-Leistungs-Verhältnis.
           </p>
         </div>
 
         <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <TabsList className="grid w-full grid-cols-4">
-            <TabsTrigger value="prices">Aktuelle Preise</TabsTrigger>
-            <TabsTrigger value="payment">Zahlungsarten</TabsTrigger>
-            <TabsTrigger value="transparency">Kostentransparenz</TabsTrigger>
+            <TabsTrigger value="prices">Tagespreise</TabsTrigger>
+            <TabsTrigger value="payment">Bezahloptionen</TabsTrigger>
+            <TabsTrigger value="transparency">Preistransparenz</TabsTrigger>
             <TabsTrigger value="calculator">Preisrechner</TabsTrigger>
           </TabsList>
 
           <TabsContent value="prices" className="space-y-8">
-            {/* Aktuelle Preise */}
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-primary-200 shadow-lg">
                 <CardHeader className="text-center">
@@ -97,15 +95,15 @@ const PriceOverviewSection = () => {
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      DIN-Norm geprüft
+                      Nach DIN-Norm geprüft
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      Schwefelarm (≤ 50 mg/kg)
+                      Schwefelgehalt unter 50 mg/kg
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      Kostenlose Lieferung ab 500L
+                      Gratis-Lieferung ab 500L
                     </li>
                   </ul>
                 </CardContent>
@@ -124,27 +122,26 @@ const PriceOverviewSection = () => {
                   <ul className="space-y-2 text-sm text-gray-600">
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      Alle Standard-Vorteile
+                      Alle Vorteile der Standard-Variante
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      Additive für bessere Verbrennung
+                      Spezialadditive für optimale Verbrennung
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-500 mr-2" />
-                      Längere Lagerfähigkeit
+                      Verlängerte Lagerdauer
                     </li>
                   </ul>
                 </CardContent>
               </Card>
             </div>
 
-            {/* Mengenrabatte */}
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center">
                   <TrendingDown className="mr-2 text-primary-600" />
-                  Mengenrabatte - Je mehr Sie bestellen, desto günstiger
+                  Staffelpreise – größere Mengen, kleinere Preise
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -162,10 +159,9 @@ const PriceOverviewSection = () => {
               </CardContent>
             </Card>
 
-            {/* Preisentwicklung */}
             <Card>
               <CardHeader>
-                <CardTitle>Preisentwicklung der letzten 6 Monate</CardTitle>
+                <CardTitle>Preisverlauf der letzten 6 Monate</CardTitle>
               </CardHeader>
               <CardContent>
                 <ChartContainer config={chartConfig} className="h-[300px]">
@@ -193,7 +189,7 @@ const PriceOverviewSection = () => {
                   </ResponsiveContainer>
                 </ChartContainer>
                 <p className="text-sm text-gray-600 mt-4">
-                  Alle Preise in Euro pro Liter inkl. MwSt. Aktuelle Tagespreise können abweichen.
+                  Angaben in Euro pro Liter inkl. MwSt. Die tagesaktuellen Preise können abweichen.
                 </p>
               </CardContent>
             </Card>
@@ -222,7 +218,7 @@ const PriceOverviewSection = () => {
 
             <Card className="bg-gray-50">
               <CardHeader>
-                <CardTitle>Bankverbindung</CardTitle>
+                <CardTitle>Unsere Bankdaten</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid md:grid-cols-2 gap-6">
@@ -234,8 +230,8 @@ const PriceOverviewSection = () => {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600">
-                      Bei Überweisungen bitte immer die Bestellnummer als Verwendungszweck angeben. 
-                      So können wir Ihre Zahlung schnell zuordnen und die Lieferung veranlassen.
+                      Bitte geben Sie bei Überweisungen immer Ihre Bestellnummer als Verwendungszweck an. 
+                      So können wir die Zahlung zügig zuordnen und Ihre Lieferung schnellstmöglich veranlassen.
                     </p>
                   </div>
                 </div>
@@ -249,26 +245,26 @@ const PriceOverviewSection = () => {
                 <CardHeader>
                   <CardTitle className="text-green-800 flex items-center">
                     <Shield className="mr-2" />
-                    Unsere Preisgarantie
+                    Unser Preisversprechen
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 text-green-700">
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
-                      Keine versteckten Kosten oder Aufschläge
+                      Keine versteckten Gebühren oder Zuschläge
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
-                      Kostenlose Lieferung ab 500 Liter
+                      Kostenfreie Zustellung ab 500 Liter
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
-                      Preise gelten für ganz Bayern
+                      Einheitliche Preise für ganz Deutschland
                     </li>
                     <li className="flex items-center">
                       <CheckCircle size={16} className="text-green-600 mr-2" />
-                      Tagesaktuelle Preise ohne Nachberechnung
+                      Tagesaktuelle Preise ohne nachträgliche Anpassung
                     </li>
                   </ul>
                 </CardContent>
@@ -276,26 +272,26 @@ const PriceOverviewSection = () => {
 
               <Card>
                 <CardHeader>
-                  <CardTitle>Warum sind wir günstiger?</CardTitle>
+                  <CardTitle>Wodurch sind wir günstiger?</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-semibold text-primary-600">Direkteinkauf</h4>
+                      <h4 className="font-semibold text-primary-600">Herstellerdirektbezug</h4>
                       <p className="text-sm text-gray-600">
-                        Wir kaufen direkt beim Hersteller und sparen Zwischenhändler-Margen.
+                        Wir beziehen direkt vom Produzenten und umgehen teure Zwischenstufen.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary-600">Optimierte Logistik</h4>
+                      <h4 className="font-semibold text-primary-600">Effiziente Tourenplanung</h4>
                       <p className="text-sm text-gray-600">
-                        Effiziente Routenplanung reduziert Transportkosten.
+                        Durchdachte Routenoptimierung senkt unsere Transportkosten spürbar.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-primary-600">Faire Marge</h4>
+                      <h4 className="font-semibold text-primary-600">Faire Kalkulation</h4>
                       <p className="text-sm text-gray-600">
-                        Wir arbeiten mit fairen, nicht überhöhten Gewinnspannen.
+                        Wir setzen auf angemessene Margen statt auf überhöhte Gewinnspannen.
                       </p>
                     </div>
                   </div>
@@ -306,7 +302,7 @@ const PriceOverviewSection = () => {
             <Card className="bg-primary-50 border-primary-200">
               <CardHeader>
                 <CardTitle className="text-center text-primary-800">
-                  Preisvergleich zu Mitbewerbern
+                  So schneiden wir im Marktvergleich ab
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -315,7 +311,7 @@ const PriceOverviewSection = () => {
                     Bis zu 15% günstiger
                   </div>
                   <p className="text-gray-600 mb-4">
-                    als der Durchschnitt unserer Mitbewerber in Bayern
+                    als der Durchschnitt vergleichbarer Anbieter in Deutschland
                   </p>
                   <Badge className="bg-primary-600">
                     Basierend auf Marktanalyse vom Juni 2024
@@ -328,11 +324,11 @@ const PriceOverviewSection = () => {
           <TabsContent value="calculator" className="space-y-6">
             <div className="text-center mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Berechnen Sie Ihren individuellen Preis
+                Ermitteln Sie Ihren persönlichen Preis
               </h3>
               <p className="text-gray-600">
-                Nutzen Sie unseren Preisrechner für eine sofortige Preiskalkulation 
-                und bestellen Sie direkt online.
+                Nutzen Sie unseren Kalkulator für eine sofortige Preisberechnung 
+                und bestellen Sie bequem online.
               </p>
             </div>
             
@@ -343,7 +339,7 @@ const PriceOverviewSection = () => {
             <div className="text-center mt-8">
               <div className="flex items-center justify-center space-x-2 text-sm text-gray-600 mb-4">
                 <MapPin size={16} className="text-primary-600" />
-                <span>Kostenlose Lieferung in ganz Deutschland</span>
+                <span>Kostenfreie Zustellung in ganz Deutschland</span>
               </div>
             </div>
           </TabsContent>

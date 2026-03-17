@@ -34,8 +34,8 @@ const PriceCalculator = () => {
   const handleOrder = async () => {
     if (!canCalculate) {
       toast({
-        title: "Ungültige Literzahl",
-        description: `Bitte wählen Sie zwischen ${minLiters} und ${maxLiters} Litern.`,
+        title: "Ungültige Menge",
+        description: `Bitte geben Sie eine Menge zwischen ${minLiters} und ${maxLiters} Litern an.`,
         variant: "destructive"
       });
       return;
@@ -73,14 +73,13 @@ const PriceCalculator = () => {
         console.log('API Response data:', data);
         
         if (data.token) {
-          // Redirect to checkout with token
           const checkoutUrl = `https://checkout.heidel-heizoel.de/checkout?token=${data.token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
           
           toast({
-            title: "Bestellung weitergeleitet",
-            description: "Sie werden zum Checkout weitergeleitet.",
+            title: "Weiterleitung zum Checkout",
+            description: "Sie werden jetzt zur Kasse weitergeleitet.",
           });
         } else {
           throw new Error('Kein Token erhalten');
@@ -93,8 +92,8 @@ const PriceCalculator = () => {
     } catch (error) {
       console.error('Order error:', error);
       toast({
-        title: "Fehler bei der Bestellung",
-        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail.",
+        title: "Bestellung fehlgeschlagen",
+        description: "Bitte versuchen Sie es später noch einmal oder kontaktieren Sie uns per E-Mail.",
         variant: "destructive"
       });
     } finally {
@@ -111,17 +110,17 @@ const PriceCalculator = () => {
       <CardHeader className="text-center pb-4">
         <CardTitle className="text-2xl font-bold text-gray-800 flex items-center justify-center gap-2">
           <Calculator className="w-6 h-6 text-primary-600" />
-          Preisrechner
+          Ihr Preisrechner
         </CardTitle>
-        <p className="text-gray-600">Berechnen Sie Ihren Heizölpreis</p>
+        <p className="text-gray-600">Ermitteln Sie Ihren individuellen Heizölpreis</p>
       </CardHeader>
       <CardContent className="space-y-6">
         {/* Oil Type Selection */}
         <div className="space-y-3">
-          <Label className="text-base font-medium">Heizöltyp wählen</Label>
+          <Label className="text-base font-medium">Produkt auswählen</Label>
           <Select value={oilType} onValueChange={(value: 'standard_heizoel' | 'premium_heizoel') => setOilType(value)}>
             <SelectTrigger className="h-12 text-base">
-              <SelectValue placeholder="Heizöltyp auswählen" />
+              <SelectValue placeholder="Heizölsorte wählen" />
             </SelectTrigger>
             <SelectContent className="bg-white">
               <SelectItem value="standard_heizoel">
@@ -143,7 +142,7 @@ const PriceCalculator = () => {
         {/* Liter Input */}
         <div className="space-y-2">
           <Label htmlFor="liters" className="text-base font-medium">
-            Liter-Anzahl ({minLiters} - {maxLiters}L)
+            Gewünschte Menge ({minLiters} - {maxLiters}L)
           </Label>
           <Input
             id="liters"
@@ -158,12 +157,12 @@ const PriceCalculator = () => {
           />
           {liters !== '' && litersNum < minLiters && (
             <p className="text-sm text-red-600">
-              Mindestbestellmenge: {minLiters} Liter
+              Mindestmenge: {minLiters} Liter
             </p>
           )}
           {liters !== '' && litersNum > maxLiters && (
             <p className="text-sm text-red-600">
-              Maximalmenge: {maxLiters} Liter
+              Höchstmenge: {maxLiters} Liter
             </p>
           )}
         </div>
@@ -171,20 +170,20 @@ const PriceCalculator = () => {
         {/* Live Price Display */}
         <div className="bg-gradient-to-r from-primary-50 to-accent-orange-50 p-4 rounded-lg space-y-3 border border-accent-orange-200">
           <div className="flex justify-between text-sm text-gray-600">
-            <span>Produkt:</span>
+            <span>Gewähltes Produkt:</span>
             <span className="font-medium">{getDisplayName(oilType)}</span>
           </div>
           <div className="flex justify-between text-sm text-gray-600">
-            <span>Menge:</span>
+            <span>Bestellmenge:</span>
             <span className="font-medium">{liters || '—'} Liter</span>
           </div>
           <div className="flex justify-between text-sm text-gray-600">
-            <span>Preis pro Liter:</span>
+            <span>Literpreis:</span>
             <span className="font-medium text-accent-orange-600">{currentPrice.toFixed(2)}€</span>
           </div>
           <div className="border-t pt-2">
             <div className="flex justify-between items-center text-xl font-bold">
-              <span>Gesamtpreis:</span>
+              <span>Summe:</span>
               <span className="text-accent-orange-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
             </div>
           </div>
@@ -194,15 +193,15 @@ const PriceCalculator = () => {
         <div className="space-y-2 text-sm text-gray-600">
           <div className="flex items-center space-x-2">
             <Truck size={16} className="text-accent-orange-500" />
-            <span>Kostenlose Lieferung</span>
+            <span>Versandkostenfreie Zustellung</span>
           </div>
           <div className="flex items-center space-x-2">
             <Clock size={16} className="text-primary-600" />
-            <span>Lieferung innerhalb 4-7 Werktagen</span>
+            <span>Zustellung in 4-7 Werktagen</span>
           </div>
           <div className="flex items-center space-x-2">
             <Shield size={16} className="text-accent-orange-500" />
-            <span>Geprüfte Qualität nach DIN-Norm</span>
+            <span>DIN-zertifizierte Qualität</span>
           </div>
         </div>
 
@@ -223,7 +222,7 @@ const PriceCalculator = () => {
         </Button>
 
         <p className="text-xs text-gray-500 text-center">
-          Alle Preise inkl. MwSt. • Mindestbestellmenge: {minLiters}L • Maximum: {maxLiters}L
+          Alle Preise inkl. MwSt. • Mindestmenge: {minLiters}L • Höchstmenge: {maxLiters}L
         </p>
       </CardContent>
     </Card>

@@ -24,15 +24,15 @@ const MobilePriceCalculator = () => {
       id: 'standard_heizoel' as const,
       name: 'Standard Heizöl',
       price: prices.standard_heizoel,
-      description: 'Bewährte Qualität',
-      features: ['DIN-konform', 'Kostengünstig']
+      description: 'Bewährte Standardqualität',
+      features: ['DIN-konform', 'Preisgünstig']
     },
     {
       id: 'premium_heizoel' as const,
       name: 'Premium Heizöl',
       price: prices.premium_heizoel,
-      description: 'Additivierte Qualität',
-      features: ['Korrosionsschutz', 'Längere Lagerfähigkeit']
+      description: 'Mit Schutz-Additiven',
+      features: ['Korrosionsschutz', 'Längere Haltbarkeit']
     }
   ];
 
@@ -63,8 +63,8 @@ const MobilePriceCalculator = () => {
   const handleOrder = async () => {
     if (!canCalculate) {
       toast({
-        title: "Ungültige Literzahl",
-        description: `Bitte wählen Sie zwischen ${minLiters} und ${maxLiters} Litern.`,
+        title: "Ungültige Menge",
+        description: `Bitte geben Sie eine Menge zwischen ${minLiters} und ${maxLiters} Litern an.`,
         variant: "destructive"
       });
       return;
@@ -107,8 +107,8 @@ const MobilePriceCalculator = () => {
           window.location.assign(checkoutUrl);
           
           toast({
-            title: "Bestellung weitergeleitet",
-            description: "Sie werden zum Checkout weitergeleitet.",
+            title: "Weiterleitung zum Checkout",
+            description: "Sie werden jetzt zur Kasse weitergeleitet.",
           });
         } else {
           throw new Error('Kein Token erhalten');
@@ -121,8 +121,8 @@ const MobilePriceCalculator = () => {
     } catch (error) {
       console.error('Order error:', error);
       toast({
-        title: "Fehler bei der Bestellung",
-        description: "Bitte versuchen Sie es später erneut oder rufen Sie uns an.",
+        title: "Bestellung fehlgeschlagen",
+        description: "Bitte versuchen Sie es später noch einmal oder rufen Sie uns an.",
         variant: "destructive"
       });
     } finally {
@@ -138,13 +138,13 @@ const MobilePriceCalculator = () => {
         <CardHeader className="text-center pb-4">
           <CardTitle className="text-xl font-bold text-gray-800 flex items-center justify-center gap-2">
             <Calculator className="w-5 h-5 text-primary-600" />
-            Preisrechner
+            Ihr Preisrechner
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-6">
-          {/* Product Selection - Improved with navigation */}
+          {/* Product Selection */}
           <div className="space-y-3">
-            <Label className="text-base font-medium">Heizöltyp wählen</Label>
+            <Label className="text-base font-medium">Produkt auswählen</Label>
             
             <div className="grid grid-cols-2 gap-3">
               {products.map((product) => (
@@ -180,7 +180,7 @@ const MobilePriceCalculator = () => {
           {/* Liter Input with Touch Controls */}
           <div className="space-y-3">
             <Label htmlFor="liters" className="text-base font-medium">
-              Liter-Anzahl ({minLiters} - {maxLiters}L)
+              Gewünschte Menge ({minLiters} - {maxLiters}L)
             </Label>
             <div className="flex items-center space-x-3">
               <Button
@@ -215,12 +215,12 @@ const MobilePriceCalculator = () => {
             </div>
             {liters !== '' && litersNum < minLiters && (
               <p className="text-sm text-red-600 text-center">
-                Mindestbestellmenge: {minLiters} Liter
+                Mindestmenge: {minLiters} Liter
               </p>
             )}
             {liters !== '' && litersNum > maxLiters && (
               <p className="text-sm text-red-600 text-center">
-                Maximalmenge: {maxLiters} Liter
+                Höchstmenge: {maxLiters} Liter
               </p>
             )}
             <div className="flex justify-center space-x-2">
@@ -242,20 +242,20 @@ const MobilePriceCalculator = () => {
           {/* Price Display */}
           <div className="bg-gradient-to-r from-primary-50 to-accent-orange-50 p-4 rounded-lg space-y-2 border border-accent-orange-200">
             <div className="flex justify-between text-sm text-gray-600">
-              <span>Produkt:</span>
+              <span>Gewähltes Produkt:</span>
               <span className="font-medium">{currentProduct.name}</span>
             </div>
             <div className="flex justify-between text-sm text-gray-600">
-              <span>Menge:</span>
+              <span>Bestellmenge:</span>
               <span className="font-medium">{liters || '—'} Liter</span>
             </div>
             <div className="flex justify-between text-sm text-gray-600">
-              <span>Preis pro Liter:</span>
+              <span>Literpreis:</span>
               <span className="font-medium text-accent-orange-600">{currentPrice.toFixed(2)}€</span>
             </div>
             <div className="border-t pt-2">
               <div className="flex justify-between items-center text-xl font-bold">
-                <span>Gesamtpreis:</span>
+                <span>Summe:</span>
                 <span className="text-accent-orange-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
               </div>
             </div>
@@ -265,15 +265,15 @@ const MobilePriceCalculator = () => {
           <div className="space-y-2 text-sm text-gray-600">
             <div className="flex items-center space-x-2">
               <Truck size={14} className="text-accent-orange-500" />
-              <span>Kostenlose Lieferung</span>
+              <span>Versandkostenfreie Zustellung</span>
             </div>
             <div className="flex items-center space-x-2">
               <Clock size={14} className="text-primary-600" />
-              <span>Lieferung in 4-7 Werktagen</span>
+              <span>Zustellung in 4-7 Werktagen</span>
             </div>
             <div className="flex items-center space-x-2">
               <Shield size={14} className="text-accent-orange-500" />
-              <span>Geprüfte DIN-Qualität</span>
+              <span>DIN-zertifizierte Qualität</span>
             </div>
           </div>
 

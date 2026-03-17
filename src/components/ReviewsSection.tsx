@@ -8,42 +8,42 @@ const ReviewsSection = () => {
       name: 'Maria Huber',
       location: 'Berlin',
       rating: 5,
-      text: 'Bereits zum dritten Mal bestellt und immer top zufrieden! Pünktliche Lieferung, faire Preise und sehr freundlicher Service. Kann Heidel Energie nur weiterempfehlen!',
+      text: 'Schon zum dritten Mal über Heidel Energie bestellt – jedes Mal rundum zufrieden! Termintreue Lieferung, faire Konditionen und ein äußerst freundliches Team. Absolute Weiterempfehlung!',
       date: 'Vor 3 Tagen'
     },
     {
       name: 'Thomas Wagner',
       location: 'Hamburg',
       rating: 5,
-      text: 'Schnelle und unkomplizierte Bestellung. Der Fahrer war sehr höflich und die Qualität des Heizöls ist ausgezeichnet. Heize seit Jahren günstiger als mit Gas!',
+      text: 'Die Bestellung war unkompliziert und flott erledigt. Der Fahrer war überaus zuvorkommend und das Heizöl brennt hervorragend. Seit Jahren spare ich damit gegenüber Gas!',
       date: 'Vor 1 Woche'
     },
     {
       name: 'Familie Schneider',
       location: 'Köln',
       rating: 5,
-      text: 'Hervorragender Kundenservice! Hatten eine Frage zur Lieferung und wurden sofort freundlich beraten. Die Lieferung kam pünktlich und alles lief perfekt.',
+      text: 'Ausgezeichnete Beratung! Wir hatten eine Rückfrage zur Zustellung und wurden sofort kompetent betreut. Alles verlief reibungslos und termingerecht.',
       date: 'Vor 2 Wochen'
     },
     {
       name: 'Johann Müller',
       location: 'Frankfurt am Main',
       rating: 5,
-      text: 'Seit 5 Jahren treuer Kunde. Zuverlässig, günstig und immer gute Qualität. Besonders schätze ich die kostenlose Lieferung und die schnelle Abwicklung.',
+      text: 'Seit 5 Jahren Stammkunde und immer wieder begeistert. Verlässlich, preiswert und durchgehend hohe Qualität. Besonders die kostenfreie Zustellung und die schnelle Abwicklung schätze ich.',
       date: 'Vor 3 Wochen'
     },
     {
       name: 'Sarah Becker',
       location: 'Stuttgart',
       rating: 5,
-      text: 'Online-Bestellung war super einfach, der Preisrechner sehr hilfreich. Lieferung kam wie versprochen und das Personal war sehr professionell.',
+      text: 'Die Online-Bestellung ging kinderleicht, der Preisrechner ist wirklich praktisch. Die Lieferung kam wie angekündigt und das Team war durchweg professionell.',
       date: 'Vor 1 Monat'
     },
     {
       name: 'Klaus Fischer',
       location: 'Leipzig',
       rating: 5,
-      text: 'Beste Heizölpreise in der Region! Habe verschiedene Anbieter verglichen und Heidel Energie war nicht nur günstiger, sondern auch noch serviceorientierter.',
+      text: 'Die günstigsten Heizölpreise weit und breit! Ich habe mehrere Anbieter verglichen – Heidel Energie war nicht nur preiswerter, sondern auch deutlich serviceorientierter.',
       date: 'Vor 2 Monaten'
     }
   ];
@@ -63,11 +63,11 @@ const ReviewsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Das sagen unsere Kunden
+            Stimmen unserer Kunden
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Über 10.000 zufriedene Kunden vertrauen auf unsere Qualität und unseren Service. 
-            Lesen Sie, was sie über uns sagen.
+            Mehr als 10.000 Kunden setzen auf Heidel Energie – lesen Sie, 
+            warum sie uns weiterempfehlen.
           </p>
           
           {/* Overall Rating */}
@@ -76,7 +76,7 @@ const ReviewsSection = () => {
               {renderStars(5)}
             </div>
             <span className="text-primary-600 font-bold text-lg">4.9/5</span>
-            <span className="text-gray-600">aus über 1.200 Bewertungen</span>
+            <span className="text-gray-600">basierend auf über 1.200 Bewertungen</span>
           </div>
         </div>
 
@@ -116,14 +116,14 @@ const ReviewsSection = () => {
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">
-              Werden auch Sie Teil unserer zufriedenen Kunden!
+              Gehören auch Sie zu unseren zufriedenen Kunden!
             </h3>
             <p className="text-xl mb-8 text-primary-100">
-              Überzeugen Sie sich selbst von unserem erstklassigen Service und unseren fairen Preisen.
+              Erleben Sie selbst, was erstklassiger Service und attraktive Preise ausmachen.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-primary-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Jetzt Preis berechnen
+                Jetzt Angebot berechnen
               </button>
             </div>
           </div>
