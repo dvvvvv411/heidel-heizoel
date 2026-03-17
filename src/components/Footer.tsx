@@ -92,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              © 2025 Heidel Energie GmbH. Alle Rechte vorbehalten.
+              © 2026 Heidel Energie GmbH. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
               <Link to="/impressum" className="hover:text-accent-orange-400 transition-colors">Impressum</Link>
