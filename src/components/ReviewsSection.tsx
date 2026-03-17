@@ -103,7 +103,7 @@ const ReviewsSection = () => {
                       <div className="text-sm text-gray-500">{review.location}</div>
                     </div>
                     <div className="text-xs text-gray-400">
-                      {new Date(review.date).toLocaleDateString('de-DE')}
+                      {review.date}
                     </div>
                   </div>
                 </div>
