@@ -32,7 +32,7 @@ const DesignSystem = () => {
               <div className="w-full h-20 bg-hill-green rounded-lg shadow-soft"></div>
               <div className="text-center">
                 <p className="font-semibold">Primär</p>
-                <p className="text-sm text-hill-text-light">#006b51</p>
+                <p className="text-sm text-hill-text-light">#2ba0f0</p>
               </div>
             </div>
             <div className="space-y-2">

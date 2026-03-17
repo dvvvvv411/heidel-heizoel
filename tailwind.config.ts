@@ -20,10 +20,10 @@ export default {
 		extend: {
 			colors: {
 				// Design System Farben
-				hill: {
-					green: '#006b51',
-					'green-dark': '#005a44',
-					'green-light': '#007d5e',
+			hill: {
+					green: '#2ba0f0',
+					'green-dark': '#1a8ad4',
+					'green-light': '#4db8ff',
 					white: '#ffffff',
 					gray: '#f8f9fa',
 					'gray-light': '#ffffff',
@@ -51,19 +51,19 @@ export default {
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
-				primary: {
-					DEFAULT: '#006b51',
+			primary: {
+					DEFAULT: '#2ba0f0',
 					foreground: '#ffffff',
-					50: '#f0fdf4',
-					100: '#dcfce7',
-					200: '#bbf7d0',
-					300: '#86efac',
-					400: '#4ade80',
-					500: '#006b51',
-					600: '#005a44',
-					700: '#004a37',
-					800: '#003a2a',
-					900: '#002a1d'
+					50: '#eff8ff',
+					100: '#dbeffe',
+					200: '#bfe3fe',
+					300: '#93d2fc',
+					400: '#4db8ff',
+					500: '#2ba0f0',
+					600: '#1a8ad4',
+					700: '#1578b8',
+					800: '#10609a',
+					900: '#0c4a7a'
 				},
 				secondary: {
 					DEFAULT: 'hsl(var(--secondary))',
