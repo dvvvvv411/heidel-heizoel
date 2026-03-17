@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="space-y-4">
             <img 
               src="/bayerwald-logo.png" 
-              alt="BAYERWALD Energie" 
+              alt="Heidel Energie" 
               className="h-24"
               style={{ 
                 filter: 'brightness(0) saturate(100%) invert(100%)',
@@ -23,7 +23,7 @@ const Footer = () => {
               Qualität, Service und faire Preise.
             </p>
             <div>
-              <div className="font-semibold">BAYERWALD Energie GmbH</div>
+              <div className="font-semibold">Heidel Energie GmbH</div>
               <div className="text-sm text-gray-400">Deutschlands Heizöl-Experte</div>
             </div>
           </div>
@@ -46,14 +46,18 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Kontakt</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center space-x-3">
+                <Phone size={16} className="text-primary-400" />
+                <span>0211-87971675</span>
+              </div>
+              <div className="flex items-center space-x-3">
                 <Mail size={16} className="text-primary-400" />
-                <span>info@bayerwald-heizoel.de</span>
+                <span>info@heidel-heizoel.de</span>
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin size={16} className="text-accent-orange-400 mt-1" />
                 <div>
-                  <div>Am Meierhof 11</div>
-                  <div>94142 Fürsteneck</div>
+                  <div>Kaiserstr. 5</div>
+                  <div>40479 Düsseldorf</div>
                 </div>
               </div>
             </div>
@@ -88,7 +92,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm">
-              © 2025 BAYERWALD Energie GmbH. Alle Rechte vorbehalten.
+              © 2025 Heidel Energie GmbH. Alle Rechte vorbehalten.
             </div>
             <div className="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-400">
               <Link to="/impressum" className="hover:text-accent-orange-400 transition-colors">Impressum</Link>

@@ -26,12 +26,15 @@ const Datenschutz = () => {
             </CardHeader>
             <CardContent>
               <div className="space-y-2">
-                <p className="font-semibold">BAYERWALD Energie GmbH</p>
-                <p>Am Meierhof 11</p>
-                <p>94142 Fürsteneck</p>
+                <p className="font-semibold">Heidel Energie GmbH</p>
+                <p>Kaiserstr. 5</p>
+                <p>40479 Düsseldorf</p>
                 <p>Deutschland</p>
                 <p className="mt-4">
-                  <span className="font-semibold">E-Mail:</span> info@bayerwald-heizoel.de
+                  <span className="font-semibold">Telefon:</span> 0211-87971675
+                </p>
+                <p>
+                  <span className="font-semibold">E-Mail:</span> info@heidel-heizoel.de
                 </p>
               </div>
             </CardContent>
@@ -145,7 +148,8 @@ const Datenschutz = () => {
                 Bei Fragen zum Datenschutz oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter:
               </p>
               <div className="mt-3 space-y-1 text-gray-700 text-sm">
-                <p><span className="font-semibold">E-Mail:</span> info@bayerwald-heizoel.de</p>
+                <p><span className="font-semibold">Telefon:</span> 0211-87971675</p>
+                <p><span className="font-semibold">E-Mail:</span> info@heidel-heizoel.de</p>
               </div>
             </CardContent>
           </Card>

@@ -16,7 +16,7 @@ const DesignSystem = () => {
         {/* Header */}
         <div className="text-center">
           <Typography variant="h1" className="mb-4">
-            BAYERWALD Energie Design System
+            Heidel Energie Design System
           </Typography>
           <Typography variant="body" color="secondary" className="max-w-2xl mx-auto">
             Ein einheitliches Design System für die Heizöl-Website mit modernen Komponenten,
@@ -235,7 +235,7 @@ const DesignSystem = () => {
               name="Hans Mueller"
               location="München"
               rating={5}
-              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann BAYERWALD Energie nur weiterempfehlen."
+              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann Heidel Energie nur weiterempfehlen."
               date="vor 2 Wochen"
             />
             <TestimonialCard

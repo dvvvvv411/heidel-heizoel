@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { Building, Users, Award, Clock, MapPin, Shield, CheckCircle, Mail } from 'lucide-react';
+import { Building, Users, Award, Clock, MapPin, Shield, CheckCircle, Mail, Phone } from 'lucide-react';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Header from '../components/Header';
@@ -80,7 +80,7 @@ const AboutUs = () => {
       <section className="bg-gradient-to-br from-primary-50 to-primary-100 py-20">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            Über BAYERWALD Energie GmbH
+            Über Heidel Energie GmbH
           </h1>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto mb-8">
             Mit 20 Jahren Erfahrung Ihr zuverlässiger Partner für Premium-Heizöl in Deutschland. 
@@ -88,8 +88,12 @@ const AboutUs = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-50">
+              <Phone className="mr-2" size={20} />
+              0211-87971675
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary-600 text-primary-600 hover:bg-primary-50">
               <Mail className="mr-2" size={20} />
-              info@bayerwald-heizoel.de
+              info@heidel-heizoel.de
             </Button>
           </div>
         </div>
@@ -137,7 +141,7 @@ const AboutUs = () => {
               </h2>
               <div className="space-y-4 text-gray-700 text-lg leading-relaxed">
                 <p>
-                  Im Jahr 2016 wurde BAYERWALD Energie GmbH mit dem Ziel gegründet, 
+                  Im Jahr 2016 wurde Heidel Energie GmbH mit dem Ziel gegründet, 
                   Kunden in Deutschland mit hochwertigem Heizöl zu fairen Preisen zu versorgen. 
                   Mit 20 Jahren Branchenerfahrung haben wir uns zu einem der 
                   führenden Heizöl-Anbieter in der Region entwickelt.
@@ -159,10 +163,10 @@ const AboutUs = () => {
             <div className="relative">
               <div className="bg-gradient-to-br from-primary-500 to-primary-700 rounded-2xl p-12 text-white text-center shadow-2xl">
                 <Building size={80} className="mx-auto mb-6 text-primary-100" />
-                <h3 className="text-3xl font-bold mb-4">BAYERWALD</h3>
+                <h3 className="text-3xl font-bold mb-4">Heidel</h3>
                 <p className="text-xl text-primary-100 mb-6">Energie GmbH</p>
                 <div className="space-y-2 text-primary-100">
-                  <p>Seit 2016 in Fürsteneck</p>
+                  <p>Seit 2016 in Düsseldorf</p>
                   <p>Deutschlands Heizöl-Experte</p>
                 </div>
               </div>
@@ -176,7 +180,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Warum Heizöl von BAYERWALD Energie wählen?
+              Warum Heizöl von Heidel Energie wählen?
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Wir bieten Ihnen mehr als nur Heizöl - wir bieten Ihnen Sicherheit, 
@@ -318,7 +322,7 @@ const AboutUs = () => {
               <CardContent className="p-12">
                 <div className="text-center mb-8">
                   <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                    BAYERWALD Energie GmbH
+                    Heidel Energie GmbH
                   </h2>
                   <p className="text-xl text-gray-600">
                     Ihr Partner für Heizöl in Deutschland
@@ -329,9 +333,9 @@ const AboutUs = () => {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Anschrift</h3>
                     <div className="space-y-2 text-gray-700">
-                      <p>BAYERWALD Energie GmbH</p>
-                      <p>Am Meierhof 11</p>
-                      <p>94142 Fürsteneck</p>
+                      <p>Heidel Energie GmbH</p>
+                      <p>Kaiserstr. 5</p>
+                      <p>40479 Düsseldorf</p>
                       <p>Deutschland</p>
                     </div>
                   </div>
@@ -340,8 +344,12 @@ const AboutUs = () => {
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Kontakt</h3>
                     <div className="space-y-3">
                       <div className="flex items-center">
+                        <Phone className="text-primary-600 mr-3" size={20} />
+                        <span className="text-gray-700">0211-87971675</span>
+                      </div>
+                      <div className="flex items-center">
                         <Mail className="text-primary-600 mr-3" size={20} />
-                        <span className="text-gray-700">info@bayerwald-heizoel.de</span>
+                        <span className="text-gray-700">info@heidel-heizoel.de</span>
                       </div>
                     </div>
                   </div>
@@ -349,9 +357,9 @@ const AboutUs = () => {
                   <div>
                     <h3 className="text-xl font-bold text-gray-900 mb-4">Handelsregister</h3>
                     <div className="space-y-2 text-gray-700">
-                      <p>HRB 6535</p>
-                      <p>Amtsgericht Passau</p>
-                      <p>USt-IdNr.: DE427997811</p>
+                      <p>HRB 104494</p>
+                      <p>Amtsgericht Düsseldorf</p>
+                      <p>USt-IdNr.: DE251547599</p>
                     </div>
                   </div>
 

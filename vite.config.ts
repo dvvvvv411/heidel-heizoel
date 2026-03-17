@@ -9,8 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     allowedHosts: [
-      'bayerwald-heizoel.de',
-      'www.bayerwald-heizoel.de',
+      'heidel-heizoel.de',
+      'www.heidel-heizoel.de',
       '.lovable.app'
     ],
   },
