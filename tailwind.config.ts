@@ -20,10 +20,10 @@ export default {
 		extend: {
 			colors: {
 				// Design System Farben
-				hill: {
-					green: '#006b51',
-					'green-dark': '#005a44',
-					'green-light': '#007d5e',
+			hill: {
+					green: '#2ba0f0',
+					'green-dark': '#1a8ad4',
+					'green-light': '#4db8ff',
 					white: '#ffffff',
 					gray: '#f8f9fa',
 					'gray-light': '#ffffff',
