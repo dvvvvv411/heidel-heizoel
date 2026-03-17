@@ -15,20 +15,20 @@ const Footer = () => {
               className="h-16 brightness-0 invert"
             />
             <p className="text-gray-300 leading-relaxed">
-              Ihr zuverlässiger Partner für Heizöl in Deutschland mit 20 Jahren Erfahrung. 
-              Qualität, Service und faire Preise.
+              Ihr bewährter Partner für Heizöl in ganz Deutschland – mit über 20 Jahren Erfahrung. 
+              Erstklassige Qualität, persönlicher Service und faire Konditionen.
             </p>
             <div>
               <div className="font-semibold">Heidel Energie GmbH</div>
-              <div className="text-sm text-gray-400">Deutschlands Heizöl-Experte</div>
+              <div className="text-sm text-gray-400">Ihr Heizöl-Spezialist in Deutschland</div>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Quick Links</h3>
+            <h3 className="text-lg font-semibold">Schnellzugriff</h3>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/" className="hover:text-accent-orange-400 transition-colors">Home</Link></li>
+              <li><Link to="/" className="hover:text-accent-orange-400 transition-colors">Startseite</Link></li>
               <li><Link to="/produkte" className="hover:text-accent-orange-400 transition-colors">Produkte</Link></li>
               <li><Link to="/services" className="hover:text-accent-orange-400 transition-colors">Services</Link></li>
               <li><Link to="/ueber-uns" className="hover:text-accent-orange-400 transition-colors">Über uns</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Kontakt</h3>
+            <h3 className="text-lg font-semibold">So erreichen Sie uns</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center space-x-3">
                 <Phone size={16} className="text-primary-400" />
@@ -61,23 +61,23 @@ const Footer = () => {
 
           {/* Business Hours */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold">Öffnungszeiten</h3>
+            <h3 className="text-lg font-semibold">Erreichbarkeit</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-center space-x-3">
                 <Clock size={16} className="text-primary-400" />
-                <span>Service-Hotline</span>
+                <span>Telefonische Beratung</span>
               </div>
               <div className="space-y-1 text-sm">
                 <div>Mo - Fr: 08:00 - 18:00</div>
                 <div>Sa: 09:00 - 14:00</div>
-                <div>So: Notfall-Hotline</div>
+                <div>So: Notfall-Bereitschaft</div>
               </div>
               <div className="mt-4 p-3 bg-accent-orange-900 rounded-lg border border-accent-orange-700">
                 <div className="text-sm font-semibold text-accent-orange-400 mb-1">
-                  24/7 Notfall-Service
+                  24/7 Notfall-Bereitschaft
                 </div>
                 <div className="text-xs text-gray-300">
-                  Bei Heizungsausfällen erreichen Sie uns rund um die Uhr
+                  Bei Heizungsausfällen sind wir rund um die Uhr für Sie erreichbar
                 </div>
               </div>
             </div>

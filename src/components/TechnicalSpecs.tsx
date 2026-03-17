@@ -33,10 +33,10 @@ const TechnicalSpecs = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Technische Datenblätter
+            Technische Produktdaten
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Detaillierte technische Spezifikationen und Prüfwerte unserer Heizöl-Produkte.
+            Alle Spezifikationen und Prüfwerte unserer Heizölsorten im Detail.
           </p>
         </div>
 
@@ -50,14 +50,14 @@ const TechnicalSpecs = () => {
             <TabsContent value="standard">
               <Card>
                 <CardHeader>
-                  <CardTitle>Standard Heizöl - Technische Daten</CardTitle>
+                  <CardTitle>Standard Heizöl – Spezifikationen</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="overflow-x-auto">
                     <table className="w-full">
                       <thead>
                         <tr className="border-b">
-                          <th className="text-left py-3 px-4">Eigenschaft</th>
+                          <th className="text-left py-3 px-4">Kenngröße</th>
                           <th className="text-left py-3 px-4">Wert</th>
                           <th className="text-left py-3 px-4">Prüfnorm</th>
                         </tr>
@@ -80,14 +80,14 @@ const TechnicalSpecs = () => {
             <TabsContent value="premium">
               <Card>
                 <CardHeader>
-                  <CardTitle>Premium Heizöl - Technische Daten</CardTitle>
+                  <CardTitle>Premium Heizöl – Spezifikationen</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="overflow-x-auto">
                     <table className="w-full">
                       <thead>
                         <tr className="border-b">
-                          <th className="text-left py-3 px-4">Eigenschaft</th>
+                          <th className="text-left py-3 px-4">Kenngröße</th>
                           <th className="text-left py-3 px-4">Wert</th>
                           <th className="text-left py-3 px-4">Prüfnorm</th>
                         </tr>

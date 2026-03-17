@@ -15,11 +15,11 @@ const DeliverySection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Unser Liefergebiet in Deutschland
+            Deutschlandweite Belieferung
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Wir liefern zuverlässig und kostenfrei in ganz Deutschland.
-            Ihr Ort ist nicht dabei? Kontaktieren Sie uns - wir finden eine Lösung!
+            Wir bringen Ihr Heizöl verlässlich und ohne Versandkosten zu Ihnen nach Hause.
+            Ihre Stadt fehlt in der Liste? Sprechen Sie uns an – wir finden eine Lösung!
           </p>
         </div>
 
@@ -53,18 +53,18 @@ const DeliverySection = () => {
                 <div className="mt-6 grid grid-cols-2 gap-4">
                   <div className="text-center bg-white/80 rounded-lg p-3">
                     <div className="text-2xl font-bold text-primary-600">100%</div>
-                    <div className="text-sm text-gray-600">Deutschland Abdeckung</div>
+                    <div className="text-sm text-gray-600">Flächendeckend in Deutschland</div>
                   </div>
                   <div className="text-center bg-white/80 rounded-lg p-3">
                     <div className="text-2xl font-bold text-primary-600">20+</div>
-                    <div className="text-sm text-gray-600">Hauptstädte</div>
+                    <div className="text-sm text-gray-600">Regionale Stützpunkte</div>
                   </div>
                 </div>
               </CardContent>
             </Card>
             
             <div className="absolute -bottom-4 -right-4 bg-primary-600 text-white px-6 py-3 rounded-full font-bold shadow-lg animate-pulse">
-              Ganz Deutschland!
+              Bundesweit verfügbar!
             </div>
           </div>
 
@@ -74,7 +74,7 @@ const DeliverySection = () => {
               <CardHeader>
                  <CardTitle className="text-2xl text-primary-600 flex items-center">
                   <CheckCircle className="mr-3 text-green-500" size={28} />
-                  Lieferstädte in Deutschland
+                  Ausgewählte Lieferorte
                 </CardTitle>
               </CardHeader>
               <CardContent>
@@ -92,12 +92,12 @@ const DeliverySection = () => {
                 
                 <div className="mt-6 p-4 bg-primary-50 rounded-lg">
                   <p className="text-primary-700 font-medium mb-2">
-                    Ihr Ort ist nicht dabei?
+                    Ihre Stadt ist nicht aufgeführt?
                   </p>
                   <p className="text-gray-600 text-sm">
-                    Kein Problem! Wir beliefern auch weitere Orte in Deutschland. 
-                    Kontaktieren Sie uns unter <span className="font-medium">089 416 133 45</span> 
-                    und wir prüfen die Liefermöglichkeit.
+                    Kein Problem! Wir beliefern zahlreiche weitere Orte in Deutschland. 
+                    Rufen Sie uns an unter <span className="font-medium">089 416 133 45</span> 
+                    und wir klären die Liefermöglichkeit für Sie.
                   </p>
                 </div>
               </CardContent>
@@ -109,22 +109,22 @@ const DeliverySection = () => {
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <Card className="text-center shadow-lg">
             <CardContent className="p-6">
-              <div className="text-3xl font-bold text-primary-600 mb-2">Kostenlos</div>
-              <div className="text-gray-600">Lieferung ab 1500L</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">Kostenfrei</div>
+              <div className="text-gray-600">Zustellung ab 1500L</div>
             </CardContent>
           </Card>
           
           <Card className="text-center shadow-lg">
             <CardContent className="p-6">
               <div className="text-3xl font-bold text-primary-600 mb-2">4-7 Tage</div>
-              <div className="text-gray-600">Lieferzeit</div>
+              <div className="text-gray-600">Durchschnittliche Lieferdauer</div>
             </CardContent>
           </Card>
           
           <Card className="text-center shadow-lg">
             <CardContent className="p-6">
               <div className="text-3xl font-bold text-primary-600 mb-2">8-18 Uhr</div>
-              <div className="text-gray-600">Lieferfenster</div>
+              <div className="text-gray-600">Zeitfenster für Zustellungen</div>
             </CardContent>
           </Card>
         </div>

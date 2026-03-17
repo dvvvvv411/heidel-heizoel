@@ -68,10 +68,10 @@ const ProductComparison = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Produktvergleich
+            Unsere Produkte im Vergleich
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Detaillierte Gegenüberstellung unserer Heizöl-Qualitäten für Ihre optimale Entscheidung.
+            Alle Unterschiede auf einen Blick – so finden Sie die passende Heizölsorte für Ihren Bedarf.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ const ProductComparison = () => {
             <Table>
               <TableHeader>
                 <TableRow>
-                  <TableHead className="w-1/3">Eigenschaft</TableHead>
+                  <TableHead className="w-1/3">Merkmal</TableHead>
                   <TableHead className="text-center">Standard Heizöl</TableHead>
                   <TableHead className="text-center">Premium Heizöl</TableHead>
                 </TableRow>

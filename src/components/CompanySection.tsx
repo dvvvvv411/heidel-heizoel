@@ -7,26 +7,26 @@ const CompanySection = () => {
     {
       icon: Building,
       number: '2016',
-      label: 'Gegründet',
-      description: '20 Jahre Erfahrung'
+      label: 'Gründungsjahr',
+      description: 'Über 20 Jahre Branchenkenntnis'
     },
     {
       icon: Users,
       number: '100.000+',
-      label: 'Kunden',
-      description: 'Zufriedene Heizöl-Kunden'
+      label: 'Kunden deutschlandweit',
+      description: 'Stetig wachsende Gemeinschaft'
     },
     {
       icon: Award,
       number: '4.9/5',
-      label: 'Bewertung',
-      description: 'Ausgezeichneter Service'
+      label: 'Kundenbewertung',
+      description: 'Hervorragender Service'
     },
     {
       icon: Clock,
       number: '24/7',
-      label: 'Service',
-      description: 'Immer für Sie da'
+      label: 'Erreichbarkeit',
+      description: 'Jederzeit für Sie ansprechbar'
     }
   ];
 
@@ -35,11 +35,11 @@ const CompanySection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Über Heidel Energie
+            Lernen Sie Heidel Energie kennen
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ihr zuverlässiger Partner für Heizöl in Deutschland mit 20 Jahren Erfahrung. 
-            Wir stehen für Qualität, Service und faire Preise.
+            Seit über zwei Jahrzehnten beliefern wir Kunden in ganz Deutschland mit erstklassigem Heizöl – 
+            zu fairen Konditionen und mit persönlichem Service.
           </p>
         </div>
 
@@ -47,25 +47,24 @@ const CompanySection = () => {
           {/* Company Story */}
           <div className="space-y-6">
             <h3 className="text-3xl font-bold text-gray-900">
-              Unsere Geschichte
+              So sind wir gewachsen
             </h3>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Seit der Gründung im Jahr 2016 haben wir uns mit 20 Jahren Erfahrung zu einem der führenden 
-                Heizöl-Anbieter in Deutschland entwickelt. Was mit langjähriger Branchenerfahrung 
-                in Düsseldorf begann, ist heute ein zuverlässiger Partner für über 100.000 
-                Kunden in ganz Deutschland.
+                Mit der Gründung im Jahr 2016 und über 20 Jahren gesammelter Branchenerfahrung 
+                haben wir uns zu einem der gefragtesten Heizöl-Lieferanten in Deutschland entwickelt. 
+                Was mit fundiertem Fachwissen in Düsseldorf begann, ist heute ein verlässlicher Partner 
+                für mehr als 100.000 Kunden im ganzen Land.
               </p>
               <p>
-                Unser Erfolgsrezept ist einfach: Wir bieten erstklassige Qualität zu 
-                fairen Preisen und legen dabei größten Wert auf persönlichen Service 
-                und Kundenzufriedenheit. Dabei setzen wir auf modernste Technik und 
-                ein erfahrenes Team.
+                Das Geheimnis unseres Erfolgs? Wir verbinden hochwertige Produkte mit 
+                transparenten Preisen und legen dabei besonderen Wert auf individuelle Betreuung 
+                und höchste Kundenzufriedenheit. Modernste Technik und ein eingespieltes Team 
+                bilden das Fundament unserer Arbeit.
               </p>
               <p>
-                Als erfahrenes Unternehmen kennen wir die Bedürfnisse unserer Kunden 
-                genau und sind stolz darauf, einen Beitrag zur Energieversorgung in 
-                ganz Deutschland zu leisten.
+                Als erfahrener Energieversorger verstehen wir genau, worauf es unseren Kunden 
+                ankommt – und sind stolz, zur Energieversorgung in ganz Deutschland beizutragen.
               </p>
             </div>
           </div>
@@ -116,7 +115,7 @@ const CompanySection = () => {
         {/* Values */}
         <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">
-            Unsere Werte
+            Wofür wir stehen
           </h3>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -124,10 +123,10 @@ const CompanySection = () => {
               <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🏆</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">Qualität</h4>
+              <h4 className="text-xl font-bold text-gray-900 mb-3">Höchste Qualität</h4>
               <p className="text-gray-600">
-                Wir liefern ausschließlich geprüftes Premium-Heizöl nach DIN-Norm 
-                für optimale Heizleistung und Effizienz.
+                Wir vertreiben ausschließlich DIN-konformes Premium-Heizöl, das 
+                maximale Heizleistung und Effizienz gewährleistet.
               </p>
             </div>
             
@@ -135,10 +134,10 @@ const CompanySection = () => {
               <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">🤝</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">Vertrauen</h4>
+              <h4 className="text-xl font-bold text-gray-900 mb-3">Vertrauenswürdigkeit</h4>
               <p className="text-gray-600">
-                Zuverlässigkeit und Transparenz sind die Grundpfeiler unseres 
-                Geschäfts. Darauf können Sie sich verlassen.
+                Verlässlichkeit und offene Kommunikation bilden das Fundament 
+                unserer Geschäftsbeziehungen. Darauf ist Verlass.
               </p>
             </div>
             
@@ -146,10 +145,10 @@ const CompanySection = () => {
               <div className="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">💚</span>
               </div>
-              <h4 className="text-xl font-bold text-gray-900 mb-3">Service</h4>
+              <h4 className="text-xl font-bold text-gray-900 mb-3">Individueller Service</h4>
               <p className="text-gray-600">
-                Persönlicher Kundenservice und individuelle Beratung stehen 
-                bei uns an erster Stelle.
+                Persönliche Betreuung und maßgeschneiderte Beratung haben 
+                bei uns oberste Priorität.
               </p>
             </div>
           </div>

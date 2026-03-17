@@ -8,22 +8,22 @@ const StorageRecommendations = () => {
     {
       icon: Thermometer,
       title: 'Temperatur',
-      description: 'Lagerung zwischen -10°C und +40°C für optimale Qualität'
+      description: 'Optimale Lagertemperatur zwischen -10°C und +40°C für bestmögliche Qualitätserhaltung'
     },
     {
       icon: Shield,
-      title: 'Behälterschutz',
-      description: 'Verwendung von korrosionsbeständigen Tanks aus Stahl oder Kunststoff'
+      title: 'Tankschutz',
+      description: 'Setzen Sie auf korrosionsbeständige Behälter aus Stahl oder hochwertigem Kunststoff'
     },
     {
       icon: Info,
       title: 'Füllstand',
-      description: 'Tank möglichst vollhalten um Kondensation zu vermeiden'
+      description: 'Halten Sie den Tank möglichst voll, um Kondenswasserbildung vorzubeugen'
     },
     {
       icon: AlertTriangle,
-      title: 'Wartung',
-      description: 'Regelmäßige Kontrolle auf Undichtigkeiten und Verschmutzungen'
+      title: 'Inspektion',
+      description: 'Prüfen Sie regelmäßig auf Undichtigkeiten und Ablagerungen'
     }
   ];
 
@@ -32,10 +32,10 @@ const StorageRecommendations = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Lagerungsempfehlungen
+            Tipps zur richtigen Lagerung
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Optimale Lagerung für maximale Qualität und Langlebigkeit Ihres Heizöls.
+            So bewahren Sie die Qualität Ihres Heizöls und verlängern dessen Haltbarkeit.
           </p>
         </div>
 
@@ -68,24 +68,24 @@ const StorageRecommendations = () => {
             <TabsContent value="standard">
               <Card>
                 <CardHeader>
-                  <CardTitle>Standard Heizöl - Lagerungshinweise</CardTitle>
+                  <CardTitle>Standard Heizöl – Hinweise zur Aufbewahrung</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-lg mb-3">Lagerdauer</h4>
+                      <h4 className="font-semibold text-lg mb-3">Empfohlene Lagerdauer</h4>
                       <ul className="space-y-2 text-gray-600">
-                        <li>• Optimale Lagerdauer: bis zu 6 Monate</li>
-                        <li>• Nach 6 Monaten: Qualitätsprüfung empfohlen</li>
-                        <li>• Längere Lagerung: Stabilisatoren hinzufügen</li>
+                        <li>• Ideale Aufbewahrungszeit: bis zu 6 Monate</li>
+                        <li>• Nach 6 Monaten: Qualitätscheck empfehlenswert</li>
+                        <li>• Bei längerer Lagerung: Stabilisierungszusätze verwenden</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-3">Wartungsintervalle</h4>
+                      <h4 className="font-semibold text-lg mb-3">Prüfintervalle</h4>
                       <ul className="space-y-2 text-gray-600">
-                        <li>• Monatliche Sichtkontrolle</li>
-                        <li>• Halbjährliche Tankreinigung</li>
-                        <li>• Jährliche Qualitätsprüfung</li>
+                        <li>• Monatliche optische Kontrolle</li>
+                        <li>• Halbjährliche Tanksäuberung</li>
+                        <li>• Jährliche Qualitätsuntersuchung</li>
                       </ul>
                     </div>
                   </div>
@@ -93,10 +93,10 @@ const StorageRecommendations = () => {
                     <div className="flex items-start gap-3">
                       <AlertTriangle className="w-5 h-5 text-yellow-600 mt-0.5" />
                       <div>
-                        <h5 className="font-medium text-yellow-800">Wichtiger Hinweis</h5>
+                        <h5 className="font-medium text-yellow-800">Bitte beachten</h5>
                         <p className="text-yellow-700 text-sm mt-1">
-                          Bei längerer Lagerung können sich Sedimente bilden. 
-                          Eine regelmäßige Kontrolle ist daher empfehlenswert.
+                          Bei längerer Aufbewahrung können sich Rückstände bilden. 
+                          Eine regelmäßige Überprüfung ist daher ratsam.
                         </p>
                       </div>
                     </div>
@@ -108,23 +108,23 @@ const StorageRecommendations = () => {
             <TabsContent value="premium">
               <Card>
                 <CardHeader>
-                  <CardTitle>Premium Heizöl - Lagerungshinweise</CardTitle>
+                  <CardTitle>Premium Heizöl – Hinweise zur Aufbewahrung</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
-                      <h4 className="font-semibold text-lg mb-3">Lagerdauer</h4>
+                      <h4 className="font-semibold text-lg mb-3">Empfohlene Lagerdauer</h4>
                       <ul className="space-y-2 text-gray-600">
-                        <li>• Optimale Lagerdauer: bis zu 12+ Monate</li>
-                        <li>• Antioxidantien schützen vor Alterung</li>
-                        <li>• Biozid-Schutz verhindert Mikroorganismen</li>
+                        <li>• Ideale Aufbewahrungszeit: über 12 Monate</li>
+                        <li>• Antioxidantien bremsen die Alterung wirkungsvoll</li>
+                        <li>• Biozid-Zusatz hemmt Mikroorganismenbildung</li>
                       </ul>
                     </div>
                     <div>
-                      <h4 className="font-semibold text-lg mb-3">Wartungsintervalle</h4>
+                      <h4 className="font-semibold text-lg mb-3">Prüfintervalle</h4>
                       <ul className="space-y-2 text-gray-600">
-                        <li>• Vierteljährliche Sichtkontrolle</li>
-                        <li>• Jährliche Tankreinigung</li>
+                        <li>• Vierteljährliche optische Kontrolle</li>
+                        <li>• Jährliche Tanksäuberung</li>
                         <li>• Qualitätsprüfung nach Bedarf</li>
                       </ul>
                     </div>
@@ -133,10 +133,10 @@ const StorageRecommendations = () => {
                     <div className="flex items-start gap-3">
                       <Shield className="w-5 h-5 text-green-600 mt-0.5" />
                       <div>
-                        <h5 className="font-medium text-green-800">Premium Vorteile</h5>
+                        <h5 className="font-medium text-green-800">Premium-Vorteil</h5>
                         <p className="text-green-700 text-sm mt-1">
-                          Dank der Additive ist Premium Heizöl deutlich länger lagerfähig 
-                          und benötigt weniger Wartungsaufwand.
+                          Dank der speziellen Additive ist Premium Heizöl wesentlich länger haltbar 
+                          und erfordert weniger Pflegeaufwand.
                         </p>
                       </div>
                     </div>

@@ -7,36 +7,36 @@ const DeliveryServiceSection = () => {
   const deliveryFeatures = [
     {
       icon: Truck,
-      title: 'Kostenlose Lieferung',
-      description: 'In ganz Deutschland ab 1500 Liter Mindestbestellmenge',
-      details: 'Keine versteckten Kosten - der angezeigte Preis ist der Endpreis'
+      title: 'Versandkostenfreie Zustellung',
+      description: 'Deutschlandweit ab 1500 Liter Bestellmenge ohne Zusatzkosten',
+      details: 'Keine versteckten Gebühren – der angezeigte Preis ist Ihr Endpreis'
     },
     {
       icon: Clock,
-      title: 'Flexible Lieferzeiten',
-      description: 'Lieferung Mo-Fr 7:00-17:00 Uhr, Sa 8:00-12:00 Uhr',
-      details: 'Wunschtermin nach telefonischer Absprache möglich'
+      title: 'Anpassbare Lieferzeiten',
+      description: 'Zustellung Mo-Fr 7:00-17:00 Uhr, Sa 8:00-12:00 Uhr',
+      details: 'Individuelle Terminabsprache per Telefon möglich'
     },
     {
       icon: Map,
-      title: 'Liefergebiet Deutschland',
-      description: 'Flächendeckende Belieferung in ganz Deutschland',
-      details: 'Optimierte Routen für schnelle und umweltschonende Lieferung'
+      title: 'Flächendeckend in Deutschland',
+      description: 'Wir beliefern Kunden im gesamten Bundesgebiet',
+      details: 'Routenoptimiert für schnelle und umweltschonende Zustellung'
     },
     {
       icon: Bell,
-      title: 'Lieferankündigung',
-      description: 'SMS oder Anruf 30-60 Minuten vor Lieferung',
-      details: 'Sie sind immer über den Lieferstatus informiert'
+      title: 'Vorab-Benachrichtigung',
+      description: 'Per SMS oder Anruf 30-60 Minuten vor Eintreffen',
+      details: 'So bleiben Sie jederzeit über den Status Ihrer Lieferung informiert'
     }
   ];
 
   const tankwagenFeatures = [
-    'Moderne, TÜV-geprüfte Tankwagen',
-    'Geeichte Zählwerke für exakte Mengenerfassung',
-    'Lange Schläuche bis zu 50 Meter',
-    'Umweltschutz durch Tropfschutz und Auffangwannen',
-    'Geschulte und zertifizierte Fahrer'
+    'Modernste, TÜV-zertifizierte Tankfahrzeuge',
+    'Geeichte Messeinrichtungen für exakte Mengenerfassung',
+    'Schlauchlängen bis zu 50 Meter',
+    'Umweltschutz durch Auffangvorrichtungen und Tropfsicherung',
+    'Qualifizierte und lizenzierte Fahrer'
   ];
 
   return (
@@ -44,11 +44,11 @@ const DeliveryServiceSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Unser Lieferservice
+            So funktioniert unsere Lieferung
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Zuverlässige und termingerechte Heizöllieferung direkt zu Ihnen nach Hause. 
-            Kostenlos in ganz Deutschland ab 1500 Liter.
+            Verlässliche und termintreue Heizölzustellung direkt vor Ihre Haustür. 
+            Ab 1500 Liter deutschlandweit ohne Versandkosten.
           </p>
         </div>
 
@@ -77,7 +77,7 @@ const DeliveryServiceSection = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Truck className="w-6 h-6 text-primary-600" />
-                Tankwagen-Ausstattung
+                Unsere Fahrzeugausstattung
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -96,29 +96,29 @@ const DeliveryServiceSection = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <Map className="w-6 h-6 text-primary-600" />
-                Liefergebiet & Zeiten
+                Einsatzgebiet & Zeitfenster
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="p-4 bg-primary-50 rounded-lg">
-                  <h4 className="font-semibold mb-2">Liefergebiet</h4>
+                  <h4 className="font-semibold mb-2">Einsatzgebiet</h4>
                   <p className="text-sm text-gray-600">
-                    Ganz Deutschland - von München bis Nürnberg, von Augsburg bis Regensburg
+                    Gesamtes Bundesgebiet – von München bis Hamburg, von Köln bis Dresden
                   </p>
                 </div>
                 <div className="p-4 bg-primary-50 rounded-lg">
-                  <h4 className="font-semibold mb-2">Lieferzeiten</h4>
+                  <h4 className="font-semibold mb-2">Zustellzeiten</h4>
                   <div className="text-sm text-gray-600 space-y-1">
                     <p>Montag - Freitag: 7:00 - 17:00 Uhr</p>
                     <p>Samstag: 8:00 - 12:00 Uhr</p>
-                    <p>Sonntag: Nach Vereinbarung</p>
+                    <p>Sonntag: Nach individueller Absprache</p>
                   </div>
                 </div>
                 <div className="p-4 bg-green-50 rounded-lg">
-                  <h4 className="font-semibold mb-2 text-green-800">Mindestbestellmenge</h4>
+                  <h4 className="font-semibold mb-2 text-green-800">Mindestmenge</h4>
                   <p className="text-sm text-green-700">
-                    <strong>1500 Liter</strong> für kostenlose Lieferung
+                    <strong>1500 Liter</strong> für versandkostenfreie Zustellung
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ const DeliveryServiceSection = () => {
             onClick={scrollToCalculatorFromOtherPage}
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3"
           >
-            Lieferung beauftragen
+            Lieferung in Auftrag geben
           </Button>
         </div>
       </div>
