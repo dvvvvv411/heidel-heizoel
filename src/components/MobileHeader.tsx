@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Mail } from 'lucide-react';
+import { Menu, X, Mail, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link } from 'react-router-dom';
 import { cn } from "@/lib/utils";
@@ -17,7 +17,7 @@ const MobileHeader = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center">
             <div className="text-xl font-bold text-primary-600">
-              BAYERWALD Energie
+              Heidel Energie
             </div>
           </Link>
 
@@ -36,7 +36,7 @@ const MobileHeader = () => {
         {/* Mobile Navigation Menu */}
         <div className={cn(
           "overflow-hidden transition-all duration-300 ease-in-out",
-          isMenuOpen ? "max-h-96 pb-4" : "max-h-0"
+          isMenuOpen ? "max-h-[500px] pb-4" : "max-h-0"
         )}>
           <nav className="space-y-1">
             <Link 
@@ -71,11 +71,18 @@ const MobileHeader = () => {
             {/* Contact Actions */}
             <div className="pt-4 border-t border-gray-200 space-y-2">
               <a
-                href="mailto:info@bayerwald-heizoel.de"
+                href="tel:0211-87971675"
+                className="flex items-center py-3 px-4 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors min-h-[48px]"
+              >
+                <Phone size={20} className="mr-3" />
+                <span className="font-medium">0211-87971675</span>
+              </a>
+              <a
+                href="mailto:info@heidel-heizoel.de"
                 className="flex items-center py-3 px-4 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition-colors min-h-[48px]"
               >
                 <Mail size={20} className="mr-3" />
-                <span className="font-medium">info@bayerwald-heizoel.de</span>
+                <span className="font-medium">info@heidel-heizoel.de</span>
               </a>
             </div>
           </nav>

@@ -41,7 +41,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Warum BAYERWALD Energie?
+            Warum Heidel Energie?
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Als führender Heizöl-Anbieter in Deutschland stehen wir für Qualität, Zuverlässigkeit 

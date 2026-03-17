@@ -27,7 +27,7 @@ const AGB = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Diese Allgemeinen Geschäftsbedingungen gelten für alle Lieferungen und Leistungen der BAYERWALD Energie GmbH, Am Meierhof 11, 94142 Fürsteneck (nachfolgend "Verkäufer" genannt) an Verbraucher und Unternehmer (nachfolgend "Kunden" genannt). Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, der Verkäufer stimmt ihrer Geltung ausdrücklich schriftlich zu.
+                Diese Allgemeinen Geschäftsbedingungen gelten für alle Lieferungen und Leistungen der Heidel Energie GmbH, Kaiserstr. 5, 40479 Düsseldorf (nachfolgend "Verkäufer" genannt) an Verbraucher und Unternehmer (nachfolgend "Kunden" genannt). Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, der Verkäufer stimmt ihrer Geltung ausdrücklich schriftlich zu.
               </p>
             </CardContent>
           </Card>

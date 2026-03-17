@@ -235,7 +235,7 @@ const DesignSystem = () => {
               name="Hans Mueller"
               location="München"
               rating={5}
-              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann BAYERWALD Energie nur weiterempfehlen."
+              testimonial="Super Service! Schnelle Lieferung und faire Preise. Kann Heidel Energie nur weiterempfehlen."
               date="vor 2 Wochen"
             />
             <TestimonialCard

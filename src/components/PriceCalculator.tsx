@@ -74,7 +74,7 @@ const PriceCalculator = () => {
         
         if (data.token) {
           // Redirect to checkout with token
-          const checkoutUrl = `https://checkout.bayerwald-heizoel.de/checkout?token=${data.token}`;
+          const checkoutUrl = `https://checkout.heidel-heizoel.de/checkout?token=${data.token}`;
           console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
           

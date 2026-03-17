@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Bell } from 'lucide-react';
+import { Menu, X, Bell, Phone } from 'lucide-react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from "@/lib/utils";
@@ -31,7 +31,11 @@ const Header = () => {
             <div className="flex items-center space-x-6">
                 <div className="flex items-center space-x-2">
                   <Bell size={14} className="text-accent-orange-500" />
-                  <span>info@bayerwald-heizoel.de</span>
+                  <span>info@heidel-heizoel.de</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <Phone size={14} className="text-accent-orange-500" />
+                  <span>0211-87971675</span>
                 </div>
               </div>
               <div className="text-accent-orange-500 font-medium">
@@ -45,7 +49,7 @@ const Header = () => {
             <Link to="/" className="flex items-center flex-shrink-0">
               <img 
                 src="/bayerwald-logo.png" 
-                alt="BAYERWALD Energie" 
+                alt="Heidel Energie" 
                 className="h-24"
               />
             </Link>
@@ -83,7 +87,7 @@ const Header = () => {
             <Link to="/" className="flex items-center">
               <img 
                 src="/bayerwald-logo.png" 
-                alt="BAYERWALD Energie" 
+                alt="Heidel Energie" 
                 className="h-20"
               />
             </Link>

@@ -28,7 +28,7 @@ const Impressum = () => {
               <CardContent className="space-y-3">
                 <div>
                   <h3 className="font-semibold text-gray-900">Firma:</h3>
-                  <p className="text-gray-700">BAYERWALD Energie GmbH</p>
+                  <p className="text-gray-700">Heidel Energie GmbH</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Rechtsform:</h3>
@@ -36,15 +36,15 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Handelsregister:</h3>
-                  <p className="text-gray-700">HRB 6535</p>
+                  <p className="text-gray-700">HRB 104494</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Registergericht:</h3>
-                  <p className="text-gray-700">Amtsgericht Passau</p>
+                  <p className="text-gray-700">Amtsgericht Düsseldorf</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">USt-IdNr.:</h3>
-                  <p className="text-gray-700">DE427997811</p>
+                  <p className="text-gray-700">DE251547599</p>
                 </div>
               </CardContent>
             </Card>
@@ -62,19 +62,27 @@ const Impressum = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900">Anschrift:</h3>
                     <p className="text-gray-700">
-                      BAYERWALD Energie GmbH<br />
-                      Am Meierhof 11<br />
-                      94142 Fürsteneck<br />
+                      Heidel Energie GmbH<br />
+                      Kaiserstr. 5<br />
+                      40479 Düsseldorf<br />
                       Deutschland
                     </p>
                   </div>
                 </div>
                 
                 <div className="flex items-center space-x-3">
+                  <Phone className="text-primary-600" size={20} />
+                  <div>
+                    <h3 className="font-semibold text-gray-900">Telefon:</h3>
+                    <p className="text-gray-700">0211-87971675</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-3">
                   <Mail className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">E-Mail:</h3>
-                    <p className="text-gray-700">info@bayerwald-heizoel.de</p>
+                    <p className="text-gray-700">info@heidel-heizoel.de</p>
                   </div>
                 </div>
               </CardContent>
@@ -86,7 +94,7 @@ const Impressum = () => {
               <CardTitle>Geschäftsführung</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700">Reinhold Riedl</p>
+              <p className="text-gray-700">Robin Mikael Holmberg</p>
             </CardContent>
           </Card>
 

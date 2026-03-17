@@ -35,7 +35,7 @@ const CompanySection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Über BAYERWALD Energie
+            Über Heidel Energie
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ihr zuverlässiger Partner für Heizöl in Deutschland mit 20 Jahren Erfahrung. 
@@ -53,7 +53,7 @@ const CompanySection = () => {
               <p>
                 Seit der Gründung im Jahr 2016 haben wir uns mit 20 Jahren Erfahrung zu einem der führenden 
                 Heizöl-Anbieter in Deutschland entwickelt. Was mit langjähriger Branchenerfahrung 
-                in Fürsteneck begann, ist heute ein zuverlässiger Partner für über 100.000 
+                in Düsseldorf begann, ist heute ein zuverlässiger Partner für über 100.000 
                 Kunden in ganz Deutschland.
               </p>
               <p>
@@ -63,7 +63,7 @@ const CompanySection = () => {
                 ein erfahrenes Team.
               </p>
               <p>
-                Als bayerisches Unternehmen kennen wir die Bedürfnisse unserer Kunden 
+                Als erfahrenes Unternehmen kennen wir die Bedürfnisse unserer Kunden 
                 genau und sind stolz darauf, einen Beitrag zur Energieversorgung in 
                 ganz Deutschland zu leisten.
               </p>
@@ -77,7 +77,7 @@ const CompanySection = () => {
                 <div className="h-96 w-full">
                   <img 
                     src="https://i.imgur.com/xPI8LoI.jpeg" 
-                    alt="BAYERWALD Energie Unternehmen" 
+                    alt="Heidel Energie Unternehmen" 
                     className="w-full h-full object-cover"
                   />
                 </div>
