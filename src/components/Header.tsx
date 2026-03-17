@@ -50,7 +50,7 @@ const Header = () => {
               <img 
                 src="/heidel-logo.png" 
                 alt="Heidel Energie" 
-                className="h-24"
+                className="h-16"
               />
             </Link>
 
