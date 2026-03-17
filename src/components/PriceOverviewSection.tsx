@@ -25,7 +25,7 @@ const PriceOverviewSection = () => {
   const chartConfig = {
     standard: {
       label: "Standard Heizöl",
-      color: "#006b51",
+      color: "#2ba0f0",
     },
     premium: {
       label: "Premium Heizöl", 
