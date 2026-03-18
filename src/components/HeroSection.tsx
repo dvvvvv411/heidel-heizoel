@@ -37,7 +37,7 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-lg lg:text-xl text-gray-600 max-w-lg">
-                Gratis-Lieferung deutschlandweit • <span className="text-accent-orange-600 font-semibold">Schon ab 70 Cent/Liter</span> • Prompt & verlässlich
+                Gratis-Lieferung deutschlandweit • <span className="text-accent-orange-600 font-semibold">Gratis-Lieferung deutschlandweit • <span className="text-accent-orange-600 font-semibold">Schon ab 90 Cent/Liter</span> • Prompt & verlässlich</span> • Prompt & verlässlich
               </p>
             </div>
 

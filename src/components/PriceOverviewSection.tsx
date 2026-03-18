@@ -33,10 +33,10 @@ const PriceOverviewSection = () => {
   };
 
   const quantityDiscounts = [
-    { range: '500-999L', discount: '0%', price: '0,70€/L' },
-    { range: '1000-1999L', discount: '2%', price: '0,69€/L' },
-    { range: '2000-2999L', discount: '3%', price: '0,68€/L' },
-    { range: '3000L+', discount: '5%', price: '0,67€/L' },
+    { range: '500-999L', discount: '0%', price: '0,90€/L' },
+    { range: '1000-1999L', discount: '2%', price: '0,88€/L' },
+    { range: '2000-2999L', discount: '3%', price: '0,87€/L' },
+    { range: '3000L+', discount: '5%', price: '0,86€/L' },
   ];
 
   const paymentOptions = [
@@ -87,7 +87,7 @@ const PriceOverviewSection = () => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-primary-600">Standard Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,70€
+                    ab 0,90€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
@@ -114,7 +114,7 @@ const PriceOverviewSection = () => {
                   <Badge className="mb-2 bg-primary-600">PREMIUM QUALITÄT</Badge>
                   <CardTitle className="text-2xl text-primary-600">Premium Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,73€
+                    ab 0,93€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
