@@ -38,6 +38,26 @@ const Bestellstatus = () => {
     setTimeout(() => setCopiedField(null), 2000);
   };
 
+  const handleDownloadPdf = async () => {
+    if (!orderData) return;
+    try {
+      const res = await fetch(orderData.invoice_url);
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Rechnung-${orderData.order_number}.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      toast({
+        title: 'Download fehlgeschlagen',
+        description: 'Bitte versuchen Sie es erneut.',
+        variant: 'destructive',
+      });
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
