@@ -91,15 +91,6 @@ const Impressum = () => {
 
           <Card className="shadow-lg mb-8">
             <CardHeader>
-              <CardTitle>Geschäftsführung</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-700">Robin Mikael Holmberg</p>
-            </CardContent>
-          </Card>
-
-          <Card className="shadow-lg mb-8">
-            <CardHeader>
               <CardTitle>Haftungsausschluss</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
