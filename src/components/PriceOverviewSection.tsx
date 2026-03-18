@@ -114,7 +114,7 @@ const PriceOverviewSection = () => {
                   <Badge className="mb-2 bg-primary-600">PREMIUM QUALITÄT</Badge>
                   <CardTitle className="text-2xl text-primary-600">Premium Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,73€
+                    ab 0,93€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>

@@ -47,8 +47,8 @@ const ProductComparison = () => {
     },
     {
       feature: 'Preis pro Liter',
-      standard: '0,70 €',
-      premium: '0,73 €'
+      standard: '0,90 €',
+      premium: '0,93 €'
     }
   ];
 
