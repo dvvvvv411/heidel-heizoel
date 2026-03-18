@@ -106,33 +106,33 @@ const PriceCalculator = () => {
   };
 
   return (
-    <Card className="w-full max-w-md mx-auto shadow-xl border-0 bg-white/95 backdrop-blur-sm">
+    <Card className="w-full max-w-md mx-auto border border-gray-100 bg-white/95 backdrop-blur-sm shadow-soft">
       <CardHeader className="text-center pb-4">
-        <CardTitle className="text-2xl font-bold text-gray-800 flex items-center justify-center gap-2">
-          <Calculator className="w-6 h-6 text-primary-600" />
+        <CardTitle className="text-xl font-bold text-gray-800 flex items-center justify-center gap-2">
+          <Calculator className="w-5 h-5 text-primary-600" />
           Ihr Preisrechner
         </CardTitle>
-        <p className="text-gray-600">Ermitteln Sie Ihren individuellen Heizölpreis</p>
+        <p className="text-sm text-gray-500">Ermitteln Sie Ihren individuellen Heizölpreis</p>
       </CardHeader>
-      <CardContent className="space-y-6">
+      <CardContent className="space-y-5">
         {/* Oil Type Selection */}
-        <div className="space-y-3">
-          <Label className="text-base font-medium">Produkt auswählen</Label>
+        <div className="space-y-2">
+          <Label className="text-sm font-medium">Produkt auswählen</Label>
           <Select value={oilType} onValueChange={(value: 'standard_heizoel' | 'premium_heizoel') => setOilType(value)}>
-            <SelectTrigger className="h-12 text-base">
+            <SelectTrigger className="h-11 text-sm">
               <SelectValue placeholder="Heizölsorte wählen" />
             </SelectTrigger>
             <SelectContent className="bg-white">
               <SelectItem value="standard_heizoel">
                 <div className="flex justify-between items-center w-full">
                   <span>Standard Heizöl</span>
-                  <span className="font-bold text-accent-orange-600 ml-4">{prices.standard_heizoel.toFixed(2)}€/L</span>
+                  <span className="font-bold text-primary-600 ml-4">{prices.standard_heizoel.toFixed(2)}€/L</span>
                 </div>
               </SelectItem>
               <SelectItem value="premium_heizoel">
                 <div className="flex justify-between items-center w-full">
                   <span>Premium Heizöl</span>
-                  <span className="font-bold text-accent-orange-600 ml-4">{prices.premium_heizoel.toFixed(2)}€/L</span>
+                  <span className="font-bold text-primary-600 ml-4">{prices.premium_heizoel.toFixed(2)}€/L</span>
                 </div>
               </SelectItem>
             </SelectContent>
@@ -141,7 +141,7 @@ const PriceCalculator = () => {
 
         {/* Liter Input */}
         <div className="space-y-2">
-          <Label htmlFor="liters" className="text-base font-medium">
+          <Label htmlFor="liters" className="text-sm font-medium">
             Gewünschte Menge ({minLiters} - {maxLiters}L)
           </Label>
           <Input
@@ -152,55 +152,55 @@ const PriceCalculator = () => {
             step={50}
             value={liters}
             onChange={handleLitersChange}
-            className="text-lg h-12"
+            className="text-base h-11"
             placeholder={`z.B. ${minLiters}`}
           />
           {liters !== '' && litersNum < minLiters && (
-            <p className="text-sm text-red-600">
+            <p className="text-xs text-red-600">
               Mindestmenge: {minLiters} Liter
             </p>
           )}
           {liters !== '' && litersNum > maxLiters && (
-            <p className="text-sm text-red-600">
+            <p className="text-xs text-red-600">
               Höchstmenge: {maxLiters} Liter
             </p>
           )}
         </div>
 
         {/* Live Price Display */}
-        <div className="bg-gradient-to-r from-primary-50 to-accent-orange-50 p-4 rounded-lg space-y-3 border border-accent-orange-200">
-          <div className="flex justify-between text-sm text-gray-600">
-            <span>Gewähltes Produkt:</span>
-            <span className="font-medium">{getDisplayName(oilType)}</span>
+        <div className="bg-gray-50 p-4 rounded-xl space-y-2.5 border border-gray-100">
+          <div className="flex justify-between text-sm text-gray-500">
+            <span>Produkt:</span>
+            <span className="font-medium text-gray-700">{getDisplayName(oilType)}</span>
           </div>
-          <div className="flex justify-between text-sm text-gray-600">
-            <span>Bestellmenge:</span>
-            <span className="font-medium">{liters || '—'} Liter</span>
+          <div className="flex justify-between text-sm text-gray-500">
+            <span>Menge:</span>
+            <span className="font-medium text-gray-700">{liters || '—'} Liter</span>
           </div>
-          <div className="flex justify-between text-sm text-gray-600">
+          <div className="flex justify-between text-sm text-gray-500">
             <span>Literpreis:</span>
-            <span className="font-medium text-accent-orange-600">{currentPrice.toFixed(2)}€</span>
+            <span className="font-medium text-primary-600">{currentPrice.toFixed(2)}€</span>
           </div>
-          <div className="border-t pt-2">
-            <div className="flex justify-between items-center text-xl font-bold">
+          <div className="border-t border-gray-200 pt-2">
+            <div className="flex justify-between items-center text-lg font-bold">
               <span>Summe:</span>
-              <span className="text-accent-orange-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
+              <span className="text-primary-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
             </div>
           </div>
         </div>
 
         {/* Features */}
-        <div className="space-y-2 text-sm text-gray-600">
+        <div className="space-y-2 text-xs text-gray-500">
           <div className="flex items-center space-x-2">
-            <Truck size={16} className="text-accent-orange-500" />
+            <Truck size={14} className="text-primary-500" />
             <span>Versandkostenfreie Zustellung</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Clock size={16} className="text-primary-600" />
+            <Clock size={14} className="text-primary-500" />
             <span>Zustellung in 4-7 Werktagen</span>
           </div>
           <div className="flex items-center space-x-2">
-            <Shield size={16} className="text-accent-orange-500" />
+            <Shield size={14} className="text-primary-500" />
             <span>DIN-zertifizierte Qualität</span>
           </div>
         </div>
@@ -209,7 +209,7 @@ const PriceCalculator = () => {
         <Button 
           onClick={handleOrder}
           disabled={isLoading || !canCalculate}
-          className="w-full bg-primary-600 hover:bg-primary-700 text-white h-12 text-lg font-semibold transition-all duration-200 hover:scale-105"
+          className="w-full bg-primary-600 hover:bg-primary-700 text-white h-11 text-base font-semibold transition-all duration-200"
         >
           {isLoading ? (
             <div className="flex items-center space-x-2">
@@ -221,7 +221,7 @@ const PriceCalculator = () => {
           )}
         </Button>
 
-        <p className="text-xs text-gray-500 text-center">
+        <p className="text-xs text-gray-400 text-center">
           Alle Preise inkl. MwSt. • Mindestmenge: {minLiters}L • Höchstmenge: {maxLiters}L
         </p>
       </CardContent>

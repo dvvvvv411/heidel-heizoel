@@ -59,7 +59,6 @@ const MobilePriceCalculator = () => {
     setOilType(productId);
   };
 
-
   const handleOrder = async () => {
     if (!canCalculate) {
       toast({
@@ -84,28 +83,17 @@ const MobilePriceCalculator = () => {
         price_per_liter: parseFloat(currentPrice.toFixed(2))
       };
 
-      console.log('Sending order request to:', apiUrl);
-      console.log('Request body:', requestBody);
-
       const response = await fetch(apiUrl, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(requestBody)
       });
 
-      console.log('API Response status:', response.status);
-
       if (response.ok) {
         const data = await response.json();
-        console.log('API Response data:', data);
-        
         if (data.token) {
           const checkoutUrl = `https://checkout.heidel-heizoel.de/checkout?token=${data.token}`;
-          console.log('Redirecting to:', checkoutUrl);
           window.location.assign(checkoutUrl);
-          
           toast({
             title: "Weiterleitung zum Checkout",
             description: "Sie werden jetzt zur Kasse weitergeleitet.",
@@ -114,8 +102,6 @@ const MobilePriceCalculator = () => {
           throw new Error('Kein Token erhalten');
         }
       } else {
-        const errorData = await response.text();
-        console.error('API Error response:', errorData);
         throw new Error(`API Error: ${response.status}`);
       }
     } catch (error) {
@@ -134,39 +120,38 @@ const MobilePriceCalculator = () => {
 
   return (
     <div className="w-full max-w-sm mx-auto">
-      <Card className="shadow-xl border-0 bg-white/95 backdrop-blur-sm">
-        <CardHeader className="text-center pb-4">
-          <CardTitle className="text-xl font-bold text-gray-800 flex items-center justify-center gap-2">
+      <Card className="border border-gray-100 bg-white/95 backdrop-blur-sm shadow-soft">
+        <CardHeader className="text-center pb-3">
+          <CardTitle className="text-lg font-bold text-gray-800 flex items-center justify-center gap-2">
             <Calculator className="w-5 h-5 text-primary-600" />
             Ihr Preisrechner
           </CardTitle>
         </CardHeader>
-        <CardContent className="space-y-6">
+        <CardContent className="space-y-5">
           {/* Product Selection */}
-          <div className="space-y-3">
-            <Label className="text-base font-medium">Produkt auswählen</Label>
-            
-            <div className="grid grid-cols-2 gap-3">
+          <div className="space-y-2">
+            <Label className="text-sm font-medium">Produkt auswählen</Label>
+            <div className="grid grid-cols-2 gap-2">
               {products.map((product) => (
                 <div
                   key={product.id}
                   className={cn(
-                    "p-3 border-2 rounded-lg cursor-pointer transition-all duration-200",
+                    "p-3 border rounded-xl cursor-pointer transition-all duration-200",
                     oilType === product.id 
-                      ? "border-accent-orange-500 bg-accent-orange-50 shadow-md" 
-                      : "border-gray-200 bg-white hover:border-accent-orange-300"
+                      ? "border-primary-400 bg-primary-50 shadow-sm" 
+                      : "border-gray-100 bg-white hover:border-primary-200"
                   )}
                   onClick={() => selectProduct(product.id)}
                 >
                   <div className="text-center">
-                    <h4 className="font-semibold text-sm mb-1 text-gray-800">{product.name}</h4>
-                    <p className="text-xl font-bold text-accent-orange-600 mb-1">
+                    <h4 className="font-medium text-sm mb-1 text-gray-800">{product.name}</h4>
+                    <p className="text-lg font-bold text-primary-600 mb-1">
                       {product.price.toFixed(2)}€/L
                     </p>
-                    <p className="text-xs text-gray-600 mb-2">{product.description}</p>
+                    <p className="text-xs text-gray-500 mb-1.5">{product.description}</p>
                     <div className="flex flex-wrap gap-1 justify-center">
                       {product.features.map((feature, idx) => (
-                        <span key={idx} className="text-xs bg-gray-100 px-2 py-1 rounded">
+                        <span key={idx} className="text-xs bg-gray-50 text-gray-600 px-2 py-0.5 rounded-md">
                           {feature}
                         </span>
                       ))}
@@ -177,20 +162,20 @@ const MobilePriceCalculator = () => {
             </div>
           </div>
 
-          {/* Liter Input with Touch Controls */}
-          <div className="space-y-3">
-            <Label htmlFor="liters" className="text-base font-medium">
+          {/* Liter Input */}
+          <div className="space-y-2">
+            <Label htmlFor="liters" className="text-sm font-medium">
               Gewünschte Menge ({minLiters} - {maxLiters}L)
             </Label>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2">
               <Button
                 type="button"
                 variant="outline"
-                className="flex-shrink-0 w-12 h-12 p-0 border-accent-orange-300 hover:bg-accent-orange-50"
+                className="flex-shrink-0 w-11 h-11 p-0 border-gray-200 hover:bg-gray-50"
                 onClick={() => adjustLiters(-100)}
                 disabled={litersNum <= minLiters}
               >
-                <ChevronLeft size={20} />
+                <ChevronLeft size={18} />
               </Button>
               <Input
                 id="liters"
@@ -200,28 +185,24 @@ const MobilePriceCalculator = () => {
                 step={50}
                 value={liters}
                 onChange={handleLitersChange}
-                className="text-center text-lg h-12 flex-1"
+                className="text-center text-base h-11 flex-1"
                 inputMode="numeric"
               />
               <Button
                 type="button"
                 variant="outline"
-                className="flex-shrink-0 w-12 h-12 p-0 border-accent-orange-300 hover:bg-accent-orange-50"
+                className="flex-shrink-0 w-11 h-11 p-0 border-gray-200 hover:bg-gray-50"
                 onClick={() => adjustLiters(100)}
                 disabled={litersNum >= maxLiters}
               >
-                <ChevronRight size={20} />
+                <ChevronRight size={18} />
               </Button>
             </div>
             {liters !== '' && litersNum < minLiters && (
-              <p className="text-sm text-red-600 text-center">
-                Mindestmenge: {minLiters} Liter
-              </p>
+              <p className="text-xs text-red-600 text-center">Mindestmenge: {minLiters} Liter</p>
             )}
             {liters !== '' && litersNum > maxLiters && (
-              <p className="text-sm text-red-600 text-center">
-                Höchstmenge: {maxLiters} Liter
-              </p>
+              <p className="text-xs text-red-600 text-center">Höchstmenge: {maxLiters} Liter</p>
             )}
             <div className="flex justify-center space-x-2">
               {[1500, 2000, 5000, 10000].map((amount) => (
@@ -230,7 +211,7 @@ const MobilePriceCalculator = () => {
                   type="button"
                   variant="outline"
                   size="sm"
-                  className="text-xs px-3 py-1 h-8 border-accent-orange-300 hover:bg-accent-orange-50 hover:border-accent-orange-500"
+                  className="text-xs px-2.5 py-1 h-7 border-gray-200 hover:bg-gray-50"
                   onClick={() => setLiters(amount.toString())}
                 >
                   {amount}L
@@ -240,39 +221,39 @@ const MobilePriceCalculator = () => {
           </div>
 
           {/* Price Display */}
-          <div className="bg-gradient-to-r from-primary-50 to-accent-orange-50 p-4 rounded-lg space-y-2 border border-accent-orange-200">
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>Gewähltes Produkt:</span>
-              <span className="font-medium">{currentProduct.name}</span>
+          <div className="bg-gray-50 p-4 rounded-xl space-y-2 border border-gray-100">
+            <div className="flex justify-between text-sm text-gray-500">
+              <span>Produkt:</span>
+              <span className="font-medium text-gray-700">{currentProduct.name}</span>
             </div>
-            <div className="flex justify-between text-sm text-gray-600">
-              <span>Bestellmenge:</span>
-              <span className="font-medium">{liters || '—'} Liter</span>
+            <div className="flex justify-between text-sm text-gray-500">
+              <span>Menge:</span>
+              <span className="font-medium text-gray-700">{liters || '—'} Liter</span>
             </div>
-            <div className="flex justify-between text-sm text-gray-600">
+            <div className="flex justify-between text-sm text-gray-500">
               <span>Literpreis:</span>
-              <span className="font-medium text-accent-orange-600">{currentPrice.toFixed(2)}€</span>
+              <span className="font-medium text-primary-600">{currentPrice.toFixed(2)}€</span>
             </div>
-            <div className="border-t pt-2">
-              <div className="flex justify-between items-center text-xl font-bold">
+            <div className="border-t border-gray-200 pt-2">
+              <div className="flex justify-between items-center text-lg font-bold">
                 <span>Summe:</span>
-                <span className="text-accent-orange-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
+                <span className="text-primary-600">{canCalculate ? totalAmount.toFixed(2) : '—'}€</span>
               </div>
             </div>
           </div>
 
           {/* Features */}
-          <div className="space-y-2 text-sm text-gray-600">
+          <div className="space-y-1.5 text-xs text-gray-500">
             <div className="flex items-center space-x-2">
-              <Truck size={14} className="text-accent-orange-500" />
+              <Truck size={13} className="text-primary-500" />
               <span>Versandkostenfreie Zustellung</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Clock size={14} className="text-primary-600" />
+              <Clock size={13} className="text-primary-500" />
               <span>Zustellung in 4-7 Werktagen</span>
             </div>
             <div className="flex items-center space-x-2">
-              <Shield size={14} className="text-accent-orange-500" />
+              <Shield size={13} className="text-primary-500" />
               <span>DIN-zertifizierte Qualität</span>
             </div>
           </div>
@@ -281,17 +262,15 @@ const MobilePriceCalculator = () => {
           <Button 
             onClick={handleOrder}
             disabled={isLoading || !canCalculate}
-            className="w-full bg-accent-orange-500 hover:bg-accent-orange-600 text-white h-14 text-lg font-semibold transition-all duration-200 hover:scale-105"
+            className="w-full bg-primary-600 hover:bg-primary-700 text-white h-12 text-base font-semibold transition-all duration-200"
           >
             {isLoading ? (
               <div className="flex items-center space-x-2">
-                <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
+                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white"></div>
                 <span>Wird verarbeitet...</span>
               </div>
             ) : (
-              <>
-                <span>{canCalculate ? `Jetzt bestellen - ${totalAmount.toFixed(2)}€` : 'Jetzt bestellen'}</span>
-              </>
+              <span>{canCalculate ? `Jetzt bestellen – ${totalAmount.toFixed(2)}€` : 'Jetzt bestellen'}</span>
             )}
           </Button>
         </CardContent>
