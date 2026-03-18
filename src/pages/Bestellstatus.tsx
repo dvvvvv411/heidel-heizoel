@@ -228,7 +228,7 @@ const Bestellstatus = () => {
                         <div key={key} className="flex items-center justify-between gap-2">
                           <div className="min-w-0">
                             <p className="text-xs text-muted-foreground">{label}</p>
-                            <p className={`font-medium text-foreground ${key === 'iban' ? 'font-mono text-sm' : ''}`}>
+                            <p className="font-medium text-foreground">
                               {value}
                             </p>
                           </div>
