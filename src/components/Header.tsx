@@ -137,6 +137,7 @@ const Header = () => {
             { to: '/produkte', label: 'Produkte' },
             { to: '/services', label: 'Services' },
             { to: '/ueber-uns', label: 'Über uns' },
+            { to: '/bestellstatus', label: 'Bestellstatus' },
           ].map(({ to, label }) => (
             <Link
               key={to}
