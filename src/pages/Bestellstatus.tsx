@@ -38,6 +38,26 @@ const Bestellstatus = () => {
     setTimeout(() => setCopiedField(null), 2000);
   };
 
+  const handleDownloadPdf = async () => {
+    if (!orderData) return;
+    try {
+      const res = await fetch(orderData.invoice_url);
+      const blob = await res.blob();
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `Rechnung-${orderData.order_number}.pdf`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } catch {
+      toast({
+        title: 'Download fehlgeschlagen',
+        description: 'Bitte versuchen Sie es erneut.',
+        variant: 'destructive',
+      });
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -284,17 +304,13 @@ const Bestellstatus = () => {
                       className="w-full h-full"
                     />
                   </div>
-                  <a
-                    href={orderData.invoice_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
+                  <Button
+                    onClick={handleDownloadPdf}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2 mt-2"
                   >
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2 mt-2">
-                      <Download className="h-5 w-5" />
-                      Rechnung herunterladen (PDF)
-                    </Button>
-                  </a>
+                    <Download className="h-5 w-5" />
+                    Rechnung herunterladen (PDF)
+                  </Button>
                 </CardContent>
               </Card>
 
