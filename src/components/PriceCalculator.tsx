@@ -12,6 +12,7 @@ const PriceCalculator = () => {
   const [liters, setLiters] = useState<string>('1500');
   const [oilType, setOilType] = useState<'standard_heizoel' | 'premium_heizoel'>('standard_heizoel');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPriceAlert, setShowPriceAlert] = useState(true);
   const { toast } = useToast();
 
   const prices = {
