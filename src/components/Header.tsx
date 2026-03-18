@@ -67,7 +67,10 @@ const Header = () => {
               <Link to="/ueber-uns" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Über uns
               </Link>
-              <Button 
+              <Link to="/bestellstatus" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
+                Bestellstatus
+              </Link>
+              <Button
                 onClick={handleOrderClick}
                 className="bg-primary-600 hover:bg-primary-700 text-white px-6"
               >
@@ -134,6 +137,7 @@ const Header = () => {
             { to: '/produkte', label: 'Produkte' },
             { to: '/services', label: 'Services' },
             { to: '/ueber-uns', label: 'Über uns' },
+            { to: '/bestellstatus', label: 'Bestellstatus' },
           ].map(({ to, label }) => (
             <Link
               key={to}
