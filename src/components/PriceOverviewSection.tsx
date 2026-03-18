@@ -33,10 +33,10 @@ const PriceOverviewSection = () => {
   };
 
   const quantityDiscounts = [
-    { range: '500-999L', discount: '0%', price: '0,70€/L' },
-    { range: '1000-1999L', discount: '2%', price: '0,69€/L' },
-    { range: '2000-2999L', discount: '3%', price: '0,68€/L' },
-    { range: '3000L+', discount: '5%', price: '0,67€/L' },
+    { range: '500-999L', discount: '0%', price: '0,90€/L' },
+    { range: '1000-1999L', discount: '2%', price: '0,88€/L' },
+    { range: '2000-2999L', discount: '3%', price: '0,87€/L' },
+    { range: '3000L+', discount: '5%', price: '0,86€/L' },
   ];
 
   const paymentOptions = [
