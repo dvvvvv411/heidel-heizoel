@@ -87,7 +87,7 @@ const PriceOverviewSection = () => {
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl text-primary-600">Standard Heizöl</CardTitle>
                   <div className="text-4xl font-bold text-gray-900">
-                    ab 0,70€
+                    ab 0,90€
                     <span className="text-lg text-gray-600">/Liter</span>
                   </div>
                 </CardHeader>
