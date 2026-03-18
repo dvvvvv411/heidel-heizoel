@@ -9,7 +9,7 @@ import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { toast } from '@/hooks/use-toast';
 
-const SHOP_ID = '4d04ce80-b4cd-4704-bcbd-e20184308710';
+const SHOP_ID = 'e2a2c01e-0085-4421-ac7b-15068e5e8ae5';
 const API_URL = 'https://luhhnsvwtnmxztcmdxyq.supabase.co/functions/v1/get-invoice-by-order';
 
 interface OrderData {
