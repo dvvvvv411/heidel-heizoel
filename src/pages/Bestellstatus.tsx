@@ -304,17 +304,13 @@ const Bestellstatus = () => {
                       className="w-full h-full"
                     />
                   </div>
-                  <a
-                    href={orderData.invoice_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    download
+                  <Button
+                    onClick={handleDownloadPdf}
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2 mt-2"
                   >
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground gap-2 mt-2">
-                      <Download className="h-5 w-5" />
-                      Rechnung herunterladen (PDF)
-                    </Button>
-                  </a>
+                    <Download className="h-5 w-5" />
+                    Rechnung herunterladen (PDF)
+                  </Button>
                 </CardContent>
               </Card>
 
