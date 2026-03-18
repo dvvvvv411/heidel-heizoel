@@ -196,7 +196,14 @@ const Bestellstatus = () => {
                     <p className="text-4xl font-bold text-foreground">
                       {formatCurrency(orderData.total_amount, orderData.currency)}
                     </p>
-                    <p className="text-sm text-muted-foreground mt-2">
+                    <p className="text-sm text-muted-foreground mt-1">
+                      inkl. {formatCurrency(orderData.total_amount - orderData.total_amount / 1.19, orderData.currency)} MwSt.
+                    </p>
+                    <div className="flex items-center gap-1.5 mt-3 text-green-600">
+                      <CheckCircle2 className="h-4 w-4" />
+                      <span className="text-sm font-medium">Kostenlose Lieferung</span>
+                    </div>
+                    <p className="text-sm text-muted-foreground mt-3">
                       Bestellnr. {orderData.order_number}
                     </p>
                   </CardContent>
@@ -221,7 +228,7 @@ const Bestellstatus = () => {
                         <div key={key} className="flex items-center justify-between gap-2">
                           <div className="min-w-0">
                             <p className="text-xs text-muted-foreground">{label}</p>
-                            <p className={`font-medium text-foreground ${key === 'iban' ? 'font-mono text-sm' : ''}`}>
+                            <p className="font-medium text-foreground">
                               {value}
                             </p>
                           </div>
