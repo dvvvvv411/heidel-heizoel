@@ -94,54 +94,70 @@ const Header = () => {
 
             <div className="flex-1 flex justify-end">
               <button
-                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                onClick={() => setIsMenuOpen(true)}
                 className="p-2 border border-gray-300 rounded-full min-w-[44px] min-h-[44px] flex items-center justify-center hover:border-accent-orange-500 transition-colors"
                 aria-label="Menü öffnen"
               >
-                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+                <Menu size={20} />
               </button>
             </div>
           </div>
-
-          {/* Mobile Navigation Menu */}
-          <div className={cn(
-            "overflow-hidden transition-all duration-300 ease-in-out",
-            isMenuOpen ? "max-h-96 pb-4" : "max-h-0"
-          )}>
-            <nav className="space-y-1">
-              <Link 
-                to="/" 
-                className="block py-3 px-4 text-gray-700 hover:bg-accent-orange-50 hover:text-accent-orange-600 transition-colors rounded-lg font-medium min-h-[48px] flex items-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Startseite
-              </Link>
-              <Link 
-                to="/produkte" 
-                className="block py-3 px-4 text-gray-700 hover:bg-accent-orange-50 hover:text-accent-orange-600 transition-colors rounded-lg font-medium min-h-[48px] flex items-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Produkte
-              </Link>
-              <Link 
-                to="/services" 
-                className="block py-3 px-4 text-gray-700 hover:bg-accent-orange-50 hover:text-accent-orange-600 transition-colors rounded-lg font-medium min-h-[48px] flex items-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Services
-              </Link>
-              <Link 
-                to="/ueber-uns" 
-                className="block py-3 px-4 text-gray-700 hover:bg-accent-orange-50 hover:text-accent-orange-600 transition-colors rounded-lg font-medium min-h-[48px] flex items-center"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Über uns
-              </Link>
-              
-            </nav>
-          </div>
         </div>
       </header>
+
+      {/* Fullscreen Mobile Sidebar */}
+      <div className={cn(
+        "fixed inset-0 z-[100] bg-white flex flex-col transition-transform duration-300 ease-in-out lg:hidden",
+        isMenuOpen ? "translate-x-0" : "translate-x-full"
+      )}>
+        {/* Sidebar Header */}
+        <div className="flex items-center justify-between px-6 py-5">
+          <div className="flex-1" />
+          <Link to="/" onClick={() => setIsMenuOpen(false)} className="flex items-center">
+            <img src="/heidel-logo.png" alt="Heidel Energie" className="h-14" />
+          </Link>
+          <div className="flex-1 flex justify-end">
+            <button
+              onClick={() => setIsMenuOpen(false)}
+              className="p-2 rounded-full border border-gray-300 min-w-[44px] min-h-[44px] flex items-center justify-center hover:border-accent-orange-500 transition-colors"
+              aria-label="Menü schließen"
+            >
+              <X size={20} />
+            </button>
+          </div>
+        </div>
+
+        {/* Sidebar Nav Links */}
+        <nav className="flex-1 flex flex-col items-center justify-center gap-6 px-6">
+          {[
+            { to: '/', label: 'Startseite' },
+            { to: '/produkte', label: 'Produkte' },
+            { to: '/services', label: 'Services' },
+            { to: '/ueber-uns', label: 'Über uns' },
+          ].map(({ to, label }) => (
+            <Link
+              key={to}
+              to={to}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-xl font-medium text-gray-800 hover:text-accent-orange-500 transition-colors"
+            >
+              {label}
+            </Link>
+          ))}
+          <Button
+            onClick={() => { setIsMenuOpen(false); handleOrderClick(); }}
+            className="mt-4 bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 text-base"
+          >
+            Jetzt bestellen
+          </Button>
+        </nav>
+
+        {/* Sidebar Footer */}
+        <div className="px-6 py-6 text-center text-sm text-gray-500 space-y-1">
+          <p>info@heidel-heizoel.de</p>
+          <p>0211-87971675</p>
+        </div>
+      </div>
     </>
   );
 };
