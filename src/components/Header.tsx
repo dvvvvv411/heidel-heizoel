@@ -54,7 +54,7 @@ const Header = () => {
               />
             </Link>
 
-            <nav className="flex items-center space-x-8 flex-shrink-0">
+            <nav className="flex items-center space-x-6 flex-shrink-0 whitespace-nowrap">
               <Link to="/" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Startseite
               </Link>
