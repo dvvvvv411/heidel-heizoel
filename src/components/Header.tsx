@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           {/* Main Navigation */}
-          <div className="flex justify-between items-center py-3 gap-6 flex-nowrap">
+          <div className="flex items-center py-3">
             <Link to="/" className="flex items-center flex-shrink-0">
               <img 
                 src="/heidel-logo.png" 
@@ -54,17 +54,17 @@ const Header = () => {
               />
             </Link>
 
-            <nav className="flex items-center space-x-6 flex-shrink-0 whitespace-nowrap">
-              <Link to="/" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
+            <nav className="ml-auto flex items-center flex-nowrap gap-6">
+              <Link to="/" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Startseite
               </Link>
-              <Link to="/produkte" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
+              <Link to="/produkte" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Produkte
               </Link>
-              <Link to="/services" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
+              <Link to="/services" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Services
               </Link>
-              <Link to="/ueber-uns" className="text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
+              <Link to="/ueber-uns" className="inline-flex items-center h-10 text-gray-700 hover:text-accent-orange-500 transition-colors font-medium">
                 Über uns
               </Link>
               <Button 
