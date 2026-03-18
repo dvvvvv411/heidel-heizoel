@@ -116,6 +116,19 @@ const PriceCalculator = () => {
         <p className="text-sm text-gray-500">Ermitteln Sie Ihren individuellen Heizölpreis</p>
       </CardHeader>
       <CardContent className="space-y-5">
+        {showPriceAlert && (
+          <div className="relative bg-amber-50 border border-amber-200 rounded-xl p-3 text-sm">
+            <button onClick={() => setShowPriceAlert(false)} className="absolute top-2 right-2 text-amber-400 hover:text-amber-600">
+              <X size={14} />
+            </button>
+            <div className="flex gap-2 pr-4">
+              <AlertTriangle size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
+              <p className="text-amber-800 text-xs leading-relaxed">
+                <span className="font-semibold">Letzte Bestände zum aktuellen Preis.</span> Aufgrund der geopolitischen Lage wird sich der Heizölpreis in Kürze erhöhen.
+              </p>
+            </div>
+          </div>
+        )}
         {/* Oil Type Selection */}
         <div className="space-y-2">
           <Label className="text-sm font-medium">Produkt auswählen</Label>
