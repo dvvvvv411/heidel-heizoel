@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import { Truck, Shield, Clock, Calculator, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Truck, Shield, Clock, Calculator, ChevronLeft, ChevronRight, AlertTriangle, X } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 import { cn } from "@/lib/utils";
 
@@ -12,6 +12,7 @@ const MobilePriceCalculator = () => {
   const [liters, setLiters] = useState<string>('1500');
   const [oilType, setOilType] = useState<'standard_heizoel' | 'premium_heizoel'>('standard_heizoel');
   const [isLoading, setIsLoading] = useState(false);
+  const [showPriceAlert, setShowPriceAlert] = useState(true);
   const { toast } = useToast();
 
   const prices = {
@@ -128,6 +129,19 @@ const MobilePriceCalculator = () => {
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-5">
+          {showPriceAlert && (
+            <div className="relative bg-amber-50 border border-amber-200 rounded-xl p-3 text-sm">
+              <button onClick={() => setShowPriceAlert(false)} className="absolute top-2 right-2 text-amber-400 hover:text-amber-600">
+                <X size={14} />
+              </button>
+              <div className="flex gap-2 pr-4">
+                <AlertTriangle size={16} className="text-amber-500 flex-shrink-0 mt-0.5" />
+                <p className="text-amber-800 text-xs leading-relaxed">
+                  <span className="font-semibold">Letzte Bestände zum aktuellen Preis.</span> Aufgrund der geopolitischen Lage wird sich der Preis in Kürze erhöhen.
+                </p>
+              </div>
+            </div>
+          )}
           {/* Product Selection */}
           <div className="space-y-2">
             <Label className="text-sm font-medium">Produkt auswählen</Label>
