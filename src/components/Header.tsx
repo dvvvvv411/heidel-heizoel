@@ -45,7 +45,7 @@ const Header = () => {
           </div>
 
           {/* Main Navigation */}
-          <div className="flex justify-between items-center py-4 gap-6">
+          <div className="flex justify-between items-center py-3 gap-6 flex-nowrap">
             <Link to="/" className="flex items-center flex-shrink-0">
               <img 
                 src="/heidel-logo.png" 
