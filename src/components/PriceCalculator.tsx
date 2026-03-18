@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Label } from "@/components/ui/label";
-import { Truck, Shield, Clock, Calculator } from 'lucide-react';
+import { Truck, Shield, Clock, Calculator, AlertTriangle, X } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 
 const PriceCalculator = () => {
